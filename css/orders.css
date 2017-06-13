@@ -1,0 +1,288 @@
+/*
+ --------------订单确认------------------ 
+ */
+.romIDLine{
+	width: 100%;
+	height: 1.333rem;
+}
+.romIDLine .endTime{
+	float: left;
+	font-size: 0.4rem;
+	line-height: 1.3rem;
+	color: #f00;
+	margin-left: 0.266rem;
+}
+.romIDLine .searchRom{
+	float: right;
+	margin: 0.2rem 0.266rem 0 0;
+}
+.romIDLine .romLocation{
+	float: left;
+	width: 1.14rem;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background-color: #4DAF51;
+	font-size: 0.32rem;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.1rem 0 0 0.1rem;
+}
+.romIDLine .ids{
+	float: left;
+	height: 0.8rem;
+	border: 0.1rem solid #4DAF51;
+	margin: 0;
+	border-radius: 0 0.1rem 0.1rem 0;
+	outline: none;
+}
+.bettingItems li{
+	width: 100%;
+	height: 1.48rem;
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	background-color: #fff;
+	margin-bottom: 0.133rem;
+	font-size: 0.4rem;
+}
+.bettingItems .selectState{
+	float: left;
+	width: 0.4rem;
+	height: 0.4rem;
+	border: 1px solid #bdbdbd;
+	border-radius: 50%;
+	margin: 0.5rem 0.266rem 0;
+}
+.bettingItems .selectIn{
+	background-color: #4DAF51;
+}
+.bettingItems .userHead{
+	float: left;
+	width: 1.12rem;
+	height: 1.12rem;
+	border-radius: 0.1rem;
+	margin: 0.15rem 0 0 0;
+	overflow: hidden;
+}
+.bettingItems .userName{
+	float: left;
+	line-height: 1.4rem;
+	margin: 0 0.4rem;
+	color: #212121;	
+}
+.bettingItems .typed{
+	float: left;
+	color: #bdbdbd;
+	line-height: 1.4rem;
+}
+.bettingItems .needDou{
+	float: right;
+	margin-right: 0.4rem;
+	line-height: 1.4rem;
+	color: #FFA726;
+	font-size: 0.453rem;
+}
+.bettingItems .needDou .dou{
+	display: inline-block;
+	width: 0.56rem;
+	height: 0.6rem;
+	background: url(../image/dou.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+	top: 0.15rem;
+}
+.dealBox{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1.306rem;
+	background-color: #fff;
+	border-top: 1px solid #bdbdbd;
+	font-size: 0.4rem;
+	color: #212121;
+	line-height: 1.3rem;
+}
+.dealBox .allSelect{
+	float: left;
+	width: 0.4rem;
+	height: 0.4rem;
+	border: 1px solid #bdbdbd;
+	border-radius: 50%;
+	margin: 0.5rem 0.266rem 0;
+}
+.dealBox .allSelectIn{
+	background-color: #4DAF51;
+}
+.dealBox .all{
+	float: left;
+	margin-right: 1.226rem;
+}
+.dealBox .allNum{
+	color: #FFA726;
+}
+.dealBox .refuseOrder{
+	float: right;
+	width: 1.8rem;
+	height: 100%;
+	background-color: #FFA726;
+	color: #fff;
+	text-align: center;
+	font-size: 0.453rem;
+}
+.dealBox .acceptOrder{
+	float: right;
+	width: 1.8rem;
+	height: 100%;
+	background-color: #4DAF51;
+	color: #fff;
+	text-align: center;
+	font-size: 0.453rem;
+}
+/*
+ ----------订单下注信息-------------
+ */
+.orderList li{
+	width: 100%;
+	height: 1.06rem;
+	background-color: #fff;
+	border-bottom: 1px solid #bdbdbd;
+	border-top: 1px solid #bdbdbd;
+	margin-bottom: 0.266rem;
+	font-size: 0.373rem;
+	line-height: 1rem;
+	color: #212121;
+}
+.orderList .timeRecord{
+	float: left;
+	margin-left: 0.266rem;
+}
+.orderList .consumption{
+	float: left;
+	margin-left: 1.04rem;
+}
+.orderList .consumption .dou{
+	display: inline-block;
+	width: 0.56rem;
+	height: 0.6rem;
+	background: url(../image/dou.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+	top: 0.15rem;
+}
+.orderList .masterState{
+	float: right;
+	margin-right: 0.4rem;
+	color: #f00;
+}
+.orderList .masterYES{
+	color: #4DAF51;
+}
+/*
+ ------------------邀请小伙伴----------------
+ */
+.shareLine{
+	width: 100%;
+	height: 1.08rem;
+	background-color: #fff;
+	margin: 0.266rem 0 0 0;
+	border-bottom: 1px solid #bdbdbd;
+	font-size: 0.4rem;
+	color: #212121;
+	padding:0 0.266rem;
+	line-height: 1rem;
+}
+.shareLine .shareIcon{
+	width: 0.626rem;
+	height: 0.626rem;
+	background: url(../image/romCenter/share.png) no-repeat;
+	-webkit-background-size: contain;
+	position: relative;
+	top: 0.2rem;
+	background-size: contain;
+	margin-right: 0.4rem;
+}
+.shareLine .greenRight{
+	width: 0.266rem;
+	height: 0.493rem;
+	background: url(../image/romCenter/greenRight.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.25rem 0 0 0.4rem;
+}
+.address .addrPosition{
+	padding-left: 0.266rem;
+	line-height: 0.533rem;
+	font-size: 0.4rem;
+}
+.address .friends{
+	width: 100%;
+	height: 1.06rem;
+	background-color: #fff;
+	padding-left: 0.266rem;
+}
+.address .friendHead{
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 0.1rem;
+	overflow: hidden;
+	margin: 0.15rem 0.266rem 0 0;
+}
+.address .friendName{
+	float: left;
+	font-size: 0.453rem;
+	color: #212121;
+	line-height: 1rem;
+}
+.address .selectState{
+	float: right;
+	width: 0.4rem;
+	height: 0.4rem;
+	border: 1px solid #bdbdbd;
+	border-radius: 50%;
+	margin: 0.3rem 0.56rem 0;
+}
+.address .selectStateIn{
+	background-color: #4DAF51;
+}
+.shareModel{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10000;
+	background-color:rgba(186,186,186,.72);;
+}
+.shareModel .shareFrame{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	height: 2.693rem;
+	width: 100%;
+}
+.shareModel .shareItem{
+	float: left;
+	width: 25%;
+}
+.shareModel .shareIcons{
+	width: 1.36rem;
+	height: 1.36rem;
+	background: url(../image/romCenter/weixin.png) no-repeat;
+	-webkit-background-size: contain;
+	margin: 0.3rem auto;
+	background-size: contain;
+}
+.shareModel .pengyouquan{
+	background: url(../image/romCenter/pengyou.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.shareModel .iconsName{
+	text-align: center;
+	font-size: 0.32rem;
+	color: #212121;
+}

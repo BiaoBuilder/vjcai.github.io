@@ -1,0 +1,151 @@
+/*
+    返回按钮
+*/
+.returnLine{
+    height: 0.88rem;
+    width: 100%;
+    background: #4baf4f;
+}
+.returnLine .return{
+    float: left;
+    width: 0.266rem;
+    height: 0.52rem;
+    background: url("../image/return.png") no-repeat;
+    background-size: contain;
+    margin: 0.2rem 0 0 0.266rem;
+}
+/*
+    用户信息展示部分
+*/
+.userBox{
+    background: #4baf4f;
+}
+.userBox .userHead{
+    width: 1.546rem;
+    height: 1.546rem;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.userBox .userHead img{
+    width: 100%;
+    /*TODO:图片测试需要后期删除*/
+    height: 100%;
+}
+.userBox .noLogin .userHead{
+	background-color: #fff;
+}
+.userBox p{
+    text-align: center;
+    font-size: 0.373rem;
+    color: #fff;
+    height: 0.6rem;
+}
+.userBox .userName{
+    margin: 0.1rem 0;
+}
+.userBox .userID{
+    padding-bottom: 0.3rem;
+}
+/*
+    用户财产展示部分
+*/
+.userBox .richShow{
+    height: 1.253rem;
+    width: 100%;
+    background: #019a05;
+}
+.userBox .noLogin .richShow{
+	background-color: #4BAF4F;
+}
+.userBox .richShow>a{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 1.253rem;
+    font-size: 0.373rem;
+    color: #fff;
+}
+.userBox .richShow .type{
+    width: 0.56rem;
+    height: 0.533rem;
+    background: url("../image/diamond.png") no-repeat;
+    background-size: contain;
+    margin: 0.213rem auto 0;
+}
+.userBox .richShow .dou{
+    background: url("../image/dou.png") no-repeat;
+    background-size: contain;
+}
+.userBox .richShow .shopCenter{
+    background: url("../image/shop.png") no-repeat;
+    background-size: contain;
+}
+/*
+    用户设置列表
+*/
+.settingList{
+    margin-top: 0.133rem;
+    padding: 0 0.267rem 0.267rem;
+    background: #fff;
+}
+.settingList li{
+    height: 1.253rem;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.settingList li>a{
+	display: inline-block;
+	height: 1.253rem;
+	width: 100%;
+}
+.settingList .iconBar{
+    float: left;
+    width: 0.746rem;
+    height: 0.746rem;
+    background: url("../image/user/voucher.png") no-repeat;
+    background-size: contain;
+    margin: 0.24rem 0.42rem 0 0;
+}
+.settingList .myBill .iconBar{
+    background: url("../image/user/myBill.png") no-repeat;
+    background-size: contain;
+}
+.settingList .missionCenter .iconBar{
+    background: url("../image/user/missionCenter.png") no-repeat;
+    background-size: contain;
+}
+.settingList .bettingRecord .iconBar{
+    background: url("../image/user/bettingRecord.png") no-repeat;
+    background-size: contain;
+}
+.settingList .roomRecord .iconBar{
+    background: url("../image/user/roomRecord.png") no-repeat;
+    background-size: contain;
+}
+.settingList .lotteryRecord .iconBar{
+    background: url("../image/user/lotteryRecord.png") no-repeat;
+    background-size: contain;
+}
+.settingList .systemInformation .iconBar{
+    background: url("../image/user/systemInformation.png") no-repeat;
+    background-size: contain;
+}
+.settingList .feedbackLine .iconBar{
+    background: url("../image/user/feedback.png") no-repeat;
+    background-size: contain;
+}
+.settingList .settingName{
+    float: left;
+    font-size: 0.373rem;
+    color: #212121;
+    line-height: 1.253rem;
+}
+.settingList .rowRight{
+    float: right;
+    width: 0.24rem;
+    height: 0.44rem;
+    background: url("../image/rowRight.png") no-repeat;
+    background-size: contain;
+    margin: 0.4rem 0 0;
+}

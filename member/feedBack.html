@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<head>
+		<meta charset="UTF-8">
+		<title>意见反馈</title>
+		<meta name="wap-font-scale" content="no">
+	    <script src="../js/flexible.js"></script>
+	    <link rel="stylesheet" href="../css/comment.css">
+	    <link rel="stylesheet" type="text/css" href="../css/webuploader.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/userMessage.css"/>
+	</head>
+	<body class="pt1">
+		<header>
+			<div class="topBox">
+	            <div class="return"></div>
+	            <div class="menuTip">意见反馈</div>
+	            <a href="#">
+		            <div class="messageIcon moreIcon"></div>
+	            </a>
+	        </div>
+		</header>
+		<section>
+			<!--主要输入页面-->
+			<div class="mainBox" style="">
+				<div class="feedbackBox">
+					<div class="inputArea">
+						<textarea name="saySome" placeholder="请输入反馈内容"></textarea>
+					</div>
+					<div class="picInput">
+						<div class="addPic">
+							<div class="addIcon"></div>
+						</div>
+						<ul class="piclist">
+						</ul>
+					</div>
+				</div>
+				<div class="contactUser">
+					<div class="userTip">请留下您的联系方式，以便我们为您解决问题</div>
+					<div class="contactBox">
+						<div class="weixinNum">
+							<input type="text" placeholder="微信号"/>
+						</div>
+						<div class="phoneNum">
+							<input type="text" placeholder="请填写您的手机号码"/>
+						</div>
+					</div>
+				</div>
+				<div class="subBtn">提交</div>
+			</div>
+			<!--问题汇总页面-->
+			<div class="showProblem" style="display: none;">
+				<ul class="problems">
+					<li>
+						<div class="proTitle">请问手机绑定在哪里？</div>
+						<div class="proTime">2017-01-04</div>
+					</li>
+					<li>
+						<div class="proTitle">请问手机绑定在哪里？</div>
+						<div class="proTime">2017-01-04</div>
+					</li>
+					<li>
+						<div class="proTitle">请问手机绑定在哪里？</div>
+						<div class="proTime">2017-01-04</div>
+					</li>	
+				</ul>
+			</div>
+			<!--问题详情页面-->
+			<div class="proDetail" style="display: none;">
+				<div class="proDTitle">
+					<div class="leftItem">问题 : </div>
+					<div class="getProblem">请问手机绑定在哪里？</div>
+				</div>
+				<div class="proDContant">
+					<div class="leftItem">回复 : </div>
+					<div class="resolveBox">
+						<div class="resolveText">
+							<p>方式一：首次用微信登录后，根据提示信息进入手机绑定页面</p>
+							<p>方式二：进入'我的'页面后点击微信头像，选择绑定手机号码，进行手机绑定</p>
+						</div>
+						<ul class="resolvePic">
+							<li>
+								<img src="../image/index/banner.jpg"/>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/webuploader.min.js"></script>
+	<script>
+		var uploader = WebUploader.create({ 
+			 auto: true, // 选完文件后，是否自动上传 
+			 swf: '../js/Uploader.swf', // swf文件路径 
+			 server: 'upload.php', // 文件接收服务端 
+			 pick: '.addIcon', // 选择文件的按钮。可选 
+			 // 只允许选择图片文件。 
+			 accept: { 
+			 title: 'Images', 
+			 extensions: 'gif,jpg,jpeg,bmp,png', 
+			 mimeTypes: 'image/jpg,image/jpeg,image/png'
+			 } ,
+			 fileNumLimit: 5
+		});
+		uploader.on( 'fileQueued', function( file ) { 
+				 var $list = $(".piclist");
+				 $li = $( 
+					 '<li id="' + file.id + '">' + 
+					 '<img>'+'<span class="delete">×</span>'+'</li>'
+				 );
+				 $img = $li.find('img'); 
+				  
+		  
+				 // $list为容器jQuery实例 
+				 $list.append( $li ); 
+				  
+				 // 创建缩略图 
+				 uploader.makeThumb( file, function( error, src ) { 
+					 if ( error ) { 
+					 $img.replaceWith('<span>不能预览</span>'); 
+					 return; 
+					 } 
+					  
+					 $img.attr( 'src', src ); 
+				 }, 100, 100 ); //100x100为缩略图尺寸 
+				 $li.on('click', '.delete', function() {
+				 		$(this).parents("li").remove();
+					    uploader.removeFile( file );
+				 })
+			});
+	</script>
+</html>

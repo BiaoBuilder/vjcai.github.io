@@ -1,0 +1,232 @@
+.resultList{
+    margin-top: 0.133rem;
+    padding-bottom: 0.266rem;
+    background-color: #fff;
+}
+.resultList li{
+    height: 1.706rem;
+    width: 100%;
+    border-bottom: 1px solid #bdbdbd;
+}
+.resultList .periods{
+    float: left;
+    width: 40%;
+    line-height: 1.7rem;
+    font-size: 0.4rem;
+    color: #212121;
+    text-align: center;
+}
+.resultList .result{
+    float: left;
+    width: 60%;
+    text-align: center;
+}
+.resultList .result span{
+    display: inline-block;
+    width: 0.613rem;
+    height: 0.613rem;
+    border-radius: 50%;
+    line-height: 0.613rem;
+    padding: 0 0.1rem;
+    font-size: 0.4rem;
+    color: #f53a4d;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.resultList .firstLine .result span{
+    color: #fff;
+    background-color: #f00;
+}
+
+.resultList .result .mouse{
+    background: url("../image/zoudiac/mouse.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .cattle{
+    background: url("../image/zoudiac/cattle.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .tiger{
+    background: url("../image/zoudiac/tiger.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .rabbit{
+    background: url("../image/zoudiac/rabbit.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .dragon{
+    background: url("../image/zoudiac/dragon.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .snake{
+    background: url("../image/zoudiac/snake.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .horse{
+    background: url("../image/zoudiac/horse.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .sheep{
+    background: url("../image/zoudiac/sheep.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .monkey{
+    background: url("../image/zoudiac/monkey.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .chicken{
+    background: url("../image/zoudiac/chicken.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .dog{
+    background: url("../image/zoudiac/dog.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.resultList .result .pig{
+    background: url("../image/zoudiac/pig.png") no-repeat;
+    background-size: contain;
+    border-radius: 0;
+    position: relative;
+    top: 0.15rem;
+}
+.result .colorW{
+    color: #fff !important;
+}.result .colorB{
+    color: #2a96ee !important;
+ }
+.result .bgRed{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #f00;
+}
+.result .bgBlue{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #2a96ee;
+}
+.result .bgGreen{
+	border-radius: 50%;
+    color: #fff;
+    background-color: #2a961e;
+}
+/*
+    ---�����¼----
+*/
+.stageSelect{
+    height: 1.173rem;
+    border-bottom: 1px solid #bdbdbd;
+    background-color: #fff;
+}
+.stageSelect>div{
+    float: left;
+    width: 33.33%;
+    font-size: 0.453rem;
+    color: #757575;
+    line-height: 1.1rem;
+    text-align: center;
+}
+.stageSelect .touch{
+    display: inline-block;
+    line-height: 1.1rem;
+    border-bottom: 1px solid #4daf51;
+    color: #4daf51;
+}
+
+/*
+    ʱʱ��and�����
+*/
+.selectBox{
+    margin-top: 0.13rem;
+    padding-bottom: 0.266rem;
+    background-color: #fff;
+}
+.gameGuess{
+    height: 1.466rem;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 0.133rem;
+    border-bottom: 1px solid #bdbdbd;
+}
+.gameGuess .gameIcon{
+    float: left;
+    width: 1.12rem;
+    height: 1.12rem;
+    background: url("../image/index/immediate.png") no-repeat;
+    background-size: contain;
+    margin: 0.173rem 0.52rem 0 0.546rem;
+}
+.gameGuess .special{
+    background: url("../image/index/special.png") no-repeat;
+    background-size: contain;
+}
+.gameGuess .gameTitle{
+    float: left;
+}
+.gameGuess .bigTitle{
+    font-size: 0.373rem;
+    color: #212121;
+    margin-top: 0.2rem;
+}
+.gameGuess .smallTitle{
+    font-size: 0.32rem;
+    color: #757575;
+    margin-top: 0.1rem;
+}
+.gameGuess .rowRight{
+    float: right;
+    width: 0.186rem;
+    height: 0.36rem;
+    background: url("../image/rowRightG.png") no-repeat;
+    background-size: contain;
+    margin: 0.6rem 0.8rem 0 0;
+}
+/*
+ 	开奖结果
+ */
+.resultOut{
+	height: 1.733rem;
+	padding-left: 0.4rem;
+}
+.resultOut .bigTitle{
+	color: #bdbdbd;
+	font-size: 0.32rem;
+	line-height: 0.6rem;
+}
+.resultOut .specialGuess{
+	font-size: 0.36rem;
+	color: #212121;
+	margin-right: 0.3rem;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>猜客游戏状态展示</title>
+	    <meta name="wap-font-scale" content="no">
+	    <script src="../js/flexible.js"></script>
+	    <link rel="stylesheet" href="../css/comment.css">
+	    <link rel="stylesheet" type="text/css" href="../css/romCenter.css"/>
+	</head>
+	<body class="pt2 pb2">
+		<header>
+			<div class="topBox">
+	            <div class="return"></div>
+	            <div class="menuTip">土豪请进</div>
+	       </div>
+	        <div class="showRom">
+	        	<span class="name">特码猜</span>
+	        	<span>房间号:</span>
+	        	<span>5123</span>
+	        </div>
+		</header>
+		<section>
+			<!--参与游戏的猜客已开奖-->
+			<div class="guessInOut" style="">
+				<div class="mainLine">
+					<div class="lineName">本期开奖结果:</div>
+					<!--特码猜显示样式-->
+					<ul class="resultNum" style="display:none">
+						<li>3</li>
+						<li>7</li>
+						<li>5</li>
+						<li>9</li>
+						<li>0</li>
+					</ul>
+					<!--时时猜添加老鼠等样式-->
+					<ul class="resultNum specialCoded">
+						<li class="animal mouse"></li>
+						<li class="animal monkey"></li>
+						<li class="bgGreen">5</li>
+					</ul>
+				</div>
+				<div class="otherItem">
+					<div class="lineItems">
+						<div class="lineIcons"></div>
+						<div class="itemsName">投注时间</div>
+						<div class="rightData">2017年2月21日14时12分</div>
+					</div>
+					<div class="lineItems">
+						<div class="lineIcons record"></div>
+						<div class="itemsName">投注记录</div>
+						<div class="rightData">
+							<a href="guessBeRecord.html">
+								<div class="redRight"></div>
+							</a>
+						</div>
+					</div>
+					<div class="lineItems">
+						<div class="lineIcons dou"></div>
+						<div class="itemsName">猜豆</div>
+						<div class="rightData">2555</div>
+					</div>
+					<div class="lineItems throwLine">
+						<div class="lineIcons bag"></div>
+						<div class="itemsName">本期盈亏</div>
+						<div class="rightData">+2456</div>
+					</div>
+				</div>		
+			</div>
+			<!--参与游戏的猜客未开奖-->
+			<div class="guessInNoOut" style="display: none;">
+				<div class="newLine">
+					<div class="helpTime">20170208期开奖时间:<span class="timer">13:14</span></div>
+					<div class="lineItems">
+						<div class="lineIcons people"></div>
+						<div class="itemsName">本期参与人数</div>
+						<div class="rightData">
+							<span>10</span>
+							<span>人</span>
+						</div>
+					</div>
+				</div>
+				<ul class="stateList">
+					<li>
+						<div class="filled">
+							<div class="fl">
+								<span>2017.03.06</span>
+								<span>14:26</span>
+							</div>
+							<div class="fr">
+								<span class="dou"></span>
+								<span>52410</span>
+							</div>
+						</div>
+						<div>
+							<div class="fl">
+								<span>直选</span>
+								<span>【</span>
+								<span class="colorRed">45</span>
+								<span>】</span>
+							</div>
+							<div class="fr">
+								<span class="inAccept">房主接单</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="filled">
+							<div class="fl">
+								<span>2017.03.06</span>
+								<span>14:26</span>
+							</div>
+							<div class="fr">
+								<span class="dou"></span>
+								<span>52410</span>
+							</div>
+						</div>
+						<div>
+							<div class="fl">
+								<span>直选</span>
+								<span>【</span>
+								<span class="colorRed">45</span>
+								<span>】</span>
+							</div>
+							<div class="fr">
+								<span class="inAccept">房主接单</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="filled">
+							<div class="fl">
+								<span>2017.03.06</span>
+								<span>14:26</span>
+							</div>
+							<div class="fr">
+								<span class="dou"></span>
+								<span>52410</span>
+							</div>
+						</div>
+						<div>
+							<div class="fl">
+								<span>直选</span>
+								<span>【</span>
+								<span class="colorRed">45</span>
+								<span>】</span>
+							</div>
+							<div class="fr">
+								<span class="inWaite">暂未接单</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="bettingBtn">下注</div>
+			</div>
+			<!--未参与游戏的猜客已开奖-->
+			<div class="guessNoInOut" style="display: none;">
+				<div class="mainLine">
+					<div class="lineName">本期开奖结果:</div>
+					<ul class="resultNum">
+						<li>3</li>
+						<li>7</li>
+						<li>5</li>
+						<li>9</li>
+						<li>0</li>
+					</ul>
+				</div>
+				<div class="otherItem">
+					<div class="lineItems">
+						<div class="lineIcons redStar"></div>
+						<div class="itemsName">本期参与人数</div>
+						<div class="rightData"><span>10</span>人</div>
+					</div>
+				</div>
+			</div>
+			<!--未参与游戏的猜客未开奖-->
+			<div class="guessNoIn" style="display: none;">
+				<div class="newLine">
+					<div class="helpTime">20170208期截止:<span>24</span><span>分钟</span><span>41</span><span>秒</span></div>
+					<div class="otherItem">
+						<div class="lineItems">
+							<div class="lineIcons redStar"></div>
+							<div class="itemsName">本期参与人数</div>
+							<div class="rightData"><span>10</span>人</div>
+						</div>
+					</div>
+				</div>
+				<div class="bettingBtn">下注</div>
+			</div>
+		</section>
+	</body>
+</html>

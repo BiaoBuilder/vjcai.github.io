@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>V竞猜</title>
+	    <meta name="wap-font-scale" content="no">
+	    <script src="../js/flexible.js"></script>
+	    <link rel="stylesheet" href="../css/comment.css">
+	    <link rel="stylesheet" href="../css/others.css"/>
+	</head>
+	<body>
+		<div class="pt1">
+			<div class="topBox">
+	            <div class="return"></div>
+	            <div class="menuTip">V竞猜</div>
+	        </div>
+	        <div>
+	        	<div class="viconD"></div>
+	        	<div class="vtitleD">V竞猜</div>
+	        </div>
+	        <div class="dowloadBtn">
+	        	<div>
+	        		<a href="#" class="open">打开APP</a>
+	        	</div>
+	        	<div>
+	        		<a href="#" class="downed">浏览器打开</a>
+	        	</div>
+	        </div>
+		</div>
+		<div class="weModel" style="display: none;">
+			<div class="weBg"></div>
+			<div>
+				<img src="../image/wetip.png" alt="" />
+			</div>
+		</div>
+		<script src="../js/jquery.min.js"></script>
+		<script>
+			$(".downed").click(function(){
+				$(".weModel").show();
+			})
+			$(".weModel").click(function(){
+				$(this).hide();
+			})
+		</script>
+	</body>
+</html>

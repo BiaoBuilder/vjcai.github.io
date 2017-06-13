@@ -1,0 +1,1093 @@
+/*
+ 	-----------创建房间------------
+ */
+.creatBox{
+	margin-top: 0.266rem;
+}
+.creatBox li{
+	width: 100%;
+	height: 1.08rem;
+	background-color: #fff;
+	font-size: 0.4rem;
+	color: #212121;
+	border-bottom: 1px solid #BDBDBD;
+}
+.creatBox .createType{
+	float: left;
+	line-height: 1rem;
+	margin: 0 0.667rem;
+}
+.creatBox .typeList{
+	float: left;
+	line-height: 1rem;
+	color: #BDBDBD;
+}
+.creatBox .typeList input{
+	font-size: 0.4rem;
+}
+.creatBox .rowRight{
+	float: right;
+	width: 0.24rem;
+	height: 0.44rem;
+	background: url(../image/rowRight.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.3rem 0.56rem 0 0;
+}
+.creatBox .odds div{
+	float: left;
+	border: 1px solid #BDBDBD;
+	width: 0.613rem;
+	height: 0.613rem;
+	text-align: center;
+	line-height: 0.613rem;
+	margin-top: 0.2rem;
+}
+.creatBox .odds .showOdds{
+	width: 1.28rem;
+}
+.creatBox .switchBtn{
+	float: right;
+	width: 1.146rem;
+	height: 0.586rem;
+	background: url(../image/romCenter/switch.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.24rem 0.56rem 0 0;
+}
+.creatBox .switchBtn.accept{
+	background: url(../image/romCenter/switchAcept.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.selectShow{
+	position: fixed;
+	bottom: -6rem;
+	left: 0;
+	width: 100%;
+	padding-bottom: 0.2rem;
+	background-color: #fff;
+	transition: all 0.5s;
+}
+.selectShow>div>div{
+	width: 100%;
+	height: 0.8rem;
+	text-align: center;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #BDBDBD;
+	color: #4DAF51;
+	font-size: 0.453rem;
+}
+.selectShow .seletTip{
+	font-size: 0.32rem;
+	color: #bdbdbd;
+}
+
+/*
+ 	--------------投注房间页面----------------------
+ */
+/*--共用头部--*/
+.showRom{
+	height: 0.693rem;
+	width: 100%;
+	text-align: center;
+	line-height: 0.69rem;
+	font-size: 0.373rem;
+	color: #fff;
+	background-color: #4DB051;
+	position: fixed;
+	top: 1.173rem;
+	left: 0;
+	z-index: 1000;
+}
+.showRom .name{
+	margin-right: 0.453rem;
+}
+.ballShow{
+	text-align:center;
+	height: 1rem;
+	padding-top: 0.2rem;
+	background-color: #4db051;
+	position: fixed;
+	z-index: 1000;
+	top: 1.86rem;
+	width: 100%;
+}
+.ballShow span{
+	display: inline-block;
+	width: 0.586rem;
+	height: 0.586rem;
+	background-color: #f00;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 0.453rem;
+	color: #fff;
+	margin-left: 0.133rem;
+}
+.slideTop{
+	width: 100%;
+	height: 1.04rem;
+	background-color: #FF5656;
+}
+.slideTop .slideItem{
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-size: 0.4rem;
+	color: #FFFFFF;
+	line-height: 1rem;
+}
+.slideTop .lineBox{
+	padding-bottom: 0.1rem;	
+}
+.slideTop .lineIn{
+	border-bottom: 2px solid #fff;
+}
+.timeTip{
+	height: 1.06rem;
+	width: 100%;
+	font-size: 0.4rem;
+	color: #212121;
+	line-height: 1.06rem;
+	padding-left: 0.4rem;
+	background-color: #fff;
+	border-bottom: 1px solid #BDBDBD;
+}
+.bettingBox .lines .gameTip,.gameTip{
+	font-size: 0.4rem;
+	color: #f00;
+	border-bottom: none;
+}
+.gameTip.widthT>div{
+	float: left;
+	width: 50%;
+	padding-left: 0.7rem;
+	line-height: 0.8rem;
+	background-color: #fff;
+}
+.gameTip.widthM>div{
+	margin-top: 0.2rem;
+}
+.gameTip.widthThree>div{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+}
+.gameTip.widthM>div>div{
+	float: left;
+	padding-left: 0.3rem;
+}
+.gameTip .colorBlue{
+	color: #0163BD;
+}
+.gameTip .colorGreen{
+	color: #3FC100;
+}
+.gameTip>p{
+	padding-left: 0.7rem;
+	line-height: 0.8rem;
+}
+/*球数玩法*/
+.bettingBox{
+	padding-bottom: 0.4rem;
+	background-color: #fff;
+	height: 9.48rem;
+}
+.bettingBox .lines{
+	background-color: #fff;
+}
+.bettingBox .lines>li{
+	height: 2.666rem;
+	width: 100%;
+	border-bottom: 1px dashed #bdbdbd;
+}
+.bettingBox .position{
+	float: left;
+	font-size: 0.453rem;
+	color: #212121;
+	line-height: 2.666rem;
+	padding: 0 0.693rem;
+}
+.bettingBox .ballNum .numSelect{
+	float: left;
+	width: 60%;
+}
+.bettingBox .ballNum .numSelect li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding-top: 0.4rem;
+}
+.bettingBox .ballNum .numSelect span{
+	display: inline-block;
+	width: 0.746rem;
+	height: 0.746rem;
+	border: 1px solid #f00;
+	color: #f00;
+	border-radius: 100%;
+	line-height: 0.746rem;
+	text-align: center;
+}
+.bettingBox .userSelect{
+	background-color: #f00;
+	color: #fff !important;
+}
+.bettingBox .userSelectB{
+	background-color: #0163BD;
+	color: #fff !important;
+	border: none !important;
+}
+.bettingBox .userSelectG{
+	background-color: #3fc100;
+	color: #fff !important;
+	border: none !important;
+}
+/*底部固定加注信息*/
+.confirm{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #BDBDBD;
+}
+.confirm .multiple{
+	padding: 0.4rem 0 0 0;
+	background-color: #fff;
+	color: #212121;
+}
+.confirmFir .multiple ul{
+	overflow: hidden;
+}
+.confirmFir .multiple li{
+	float: left;
+	width: 50%;
+	font-size: 0.4rem;
+	text-align: center;
+	padding-left: 0.266rem;
+}
+.confirmFir .multiple li div{
+	float: left;
+}
+.confirmFir .multiple .type{
+	line-height: 0.8rem;
+}
+.confirmFir .inputNum input{
+	border: 1px solid #bdbdbd;
+	border-radius: 0.1rem;
+	width: 2rem;
+	text-align: center;
+	height: 0.8rem;
+} 
+.confirmFir .dou{
+	float: left;
+	width: 0.56rem;
+	height: 0.6rem;
+	background: url("../image/dou.png") no-repeat;
+	background-size: contain;
+	margin: 0.1rem 0 0 0.1rem;
+}
+.confirmFir .multiple .beilvContain{
+	float: right;
+	margin-right: 0.573rem;
+}
+.confirmFir .peilv{
+	width: 2.133rem;
+	height: 0.8rem;
+	border-radius: 0.15rem 0 0 0.15rem;
+	border: 0.05rem solid #4DAF51;
+	text-align: center;
+	line-height: 0.7rem;
+}
+.confirmFir .peilvR{
+	width: 1.066rem;
+	height: 0.8rem;
+	border: 0.05rem solid #4DAF51;
+	background-color: #4DAF51;
+	border-radius: 0 0.15rem 0.15rem 0;
+}
+.confirmFir .moreDetail{
+	width: 0.333rem;
+	height: 0.293rem;
+	background: url(../image/romCenter/beilv.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.2rem 0 0 0.3rem;
+}
+.confirmFir .addNow>div{
+	float: left;
+}
+.confirmFir .addNow .btns{
+	width: 0.64rem;
+	height: 0.8rem;
+	border: 1px solid #bdbdbd;
+	font-size: 0.8rem;
+	line-height: 0.6rem;
+	text-align: center; 
+	color: #bdbdbd;
+}
+.confirmFir .addNow .showOdds{
+	width: 1.386rem;
+	text-align: center;
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #bdbdbd;
+}
+.confirmFir .sure{
+	width: 100%;
+	height: 1.186rem;
+	background-color: #4DAF51;
+	line-height: 1.186rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.453rem;
+	margin-top: 0.4rem;
+}
+.countSure li{
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 0.4rem;
+	color: #212121;
+	height: 1.06rem;
+	line-height: 1rem;
+	background-color: #fff;
+}
+.countSure .countYellow{
+	color: #FFA726;
+}
+.countSure .controller li{
+	height: 1.173rem;
+	line-height: 1.17rem;
+	color: #fff;
+	font-size: 0.453rem;
+}
+.countSure .bgy{
+	background-color: #FFA726;
+}
+.countSure .bgg{
+	background: #4DAF51;
+}
+/*球数大小,单双*/
+.bettingBox .bigSelect{
+	float: left;
+	width: 60%;
+}
+.bettingBox .bigSelect li{
+	float: left;
+	width: 50%;
+}
+.bettingBox .bigCircle{
+	width: 1.6rem;
+	height: 1.6rem;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+	text-align: center;
+	border: 1px solid #f00;
+	border-radius: 50%;
+	margin: 0.5rem 0 0 0.2rem;
+	color: #f00;
+}
+/*牛牛玩法,梭哈玩法*/
+.niuniu{
+	padding-bottom: 1rem;
+}
+.niuniu li,.showHand li{
+	float: left;
+	width: 20%;
+}
+.bettingBox .mediaCircle{
+	width: 1.06rem;
+	height: 1.06rem;
+	border: 1px solid #f00;
+	border-radius: 50%;
+	font-size: 0.4rem;
+	color: #f00;
+	line-height: 1rem;
+	text-align: center;
+	margin: 0.666rem auto 0;
+}
+/*直选页面*/
+.bettingBox .specialNum li{
+	float: left;
+	width: 14.28%;
+}
+.bettingBox .circleSmall{
+	width: 0.746rem;
+	height: 0.746rem;
+	border: 1px solid #f00;
+	border-radius: 50%;
+	margin: 0.4rem auto 0;
+	line-height: 0.7rem;
+	color: #f00;
+	font-size: 0.453rem;
+	text-align: center;
+}
+/*生肖页面*/
+.zodiacBox li{
+	float: left;
+	width: 16.66%;
+	text-align: center;
+	font-size: 0.426rem;
+	margin-bottom: 0.4rem;
+	color: #212121;
+}
+.zodiacBox .zodiacBg{
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0.32rem auto 0;
+	text-align: center;
+}
+.zodiacBox .zodicSelect{
+	background: url(../image/romCenter/zodiacBg.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.zodiacs{
+	display: inline-block;
+	width: 0.746rem;
+	height: 0.746rem;
+	margin-top: 0.2rem;
+}
+.mouse{
+	background: url(../image/zoudiac/mouse.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.cattle{
+	background: url(../image/zoudiac/cattle.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.tiger{
+	background: url(../image/zoudiac/tiger.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.rabbit{
+	background: url(../image/zoudiac/rabbit.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.dragon{
+	background: url(../image/zoudiac/dragon.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.snake{
+	background: url(../image/zoudiac/snake.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.horse{
+	background: url(../image/zoudiac/horse.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.sheep{
+	background: url(../image/zoudiac/sheep.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.monkey{
+	background: url(../image/zoudiac/monkey.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.chicken{
+	background: url(../image/zoudiac/chicken.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.dog{
+	background: url(../image/zoudiac/dog.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.pig{
+	background: url(../image/zoudiac/pig.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+/*特码猜单双，大小*/
+.bettingBox .specialParity li,.bettingBox .specialSize li{
+	float: left;
+	width: 50%;
+}
+.bettingBox .circleLarge{
+	width: 2.133rem;
+	height: 2.133rem;
+	border: 1px solid #f00;
+	border-radius: 50%;
+	line-height: 2.1rem;
+	text-align: center;
+	margin: 0.4rem auto;
+	color: #f00;
+	font-size: 0.8rem;
+}
+/*波色*/
+.bettingBox .selectColor li{
+	float: left;
+	width: 33.33%;
+}
+.bettingBox .circleMediu{
+	width: 1.866rem;
+	height: 1.866rem;
+	border: 1px solid #f00;
+	border-radius: 50%;
+	line-height: 1.86rem;
+	text-align: center;
+	margin: 0.4rem auto;
+	color: #f00;
+	font-size: 0.8rem;
+}
+/*五行*/
+.selectFive li{
+	float: left;
+	width: 20%;
+}
+.bettingBox .circleXL{
+	width: 1.333rem;
+	height: 1.333rem;
+	border: 1px solid #f00;
+	border-radius: 50%;
+	line-height: 1.3rem;
+	text-align: center;
+	margin: 0.8rem auto;
+	color: #f00;
+	font-size: 0.667rem;
+}
+/*倍率显示块*/
+.beilvModel{
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.beilvModel .beilvBg{
+	position: absolute;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(186,186,186,.72);
+}
+.beilvModel .beilvBox{
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+}
+.beilvModel .peilvTitle{
+	width: 100%;
+	height: 0.8rem;
+	background-color: #4DAF51;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 0.8rem;
+	color: #fff;
+	position: relative;
+}
+.beilvModel .hideBtn{
+	position: absolute;
+	right: 0.4rem;
+	top: 0.25rem;
+	width: 0.333rem;
+	height: 0.293rem;
+	background: url(../image/romCenter/hide.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.beilvModel .beilvList{
+	width: 92%;
+	margin: auto;
+	height: 1.06rem;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	border-bottom: 1px solid #bdbdbd;
+	color: #212121;
+}
+.beilvModel .num{
+	color: #f00;
+}
+/*下注统计*/
+.countSelect li{
+	height: 1.06rem;
+	width: 100%;
+	background-color: #fff;
+	margin-top: 0.266rem;
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+}
+.countSelect li>div{
+	float: left;
+	width: 23%;
+	text-align: center;
+	line-height: 1rem;
+	font-size: 0.373rem;
+	color: #212121;
+}
+.countSelect .countName{
+	width: 31%;
+}
+.countSelect .countRed{
+	color: #f00;
+}
+.countSelect .douPic{
+	display: inline-block;
+	width: 0.56rem;
+	height: 0.6rem;
+	background: url(../image/dou.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+	top: 0.15rem;
+}
+.countSelect .delete{
+	display: inline-block;
+	width: 0.426rem;
+	height: 0.453rem;
+	background: url(../image/romCenter/delete.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+	top: 0.1rem;
+}
+/*
+ 	操作提示信息
+ */
+.controlTip{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(189,189,189,.72);
+	z-index: 10000;
+}
+.controlTip .tipBox{
+	width: 8.88rem;
+	height: 5.33rem;
+	background-color: #fff;
+	border: 1px solid #FFA726;
+	border-radius: 0.2rem;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -2.665rem 0 0 -4.44rem;
+}
+.controlTip .rarePic{
+	width: 1.8rem;
+	height: 1.96rem;
+	background: url(../image/romCenter/rare.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.133rem auto 0;
+}
+.controlTip .tipsWord{
+	font-size: 0.453rem;
+	color: #FFA726;
+	line-height: 0.6rem;
+	text-align: center;
+	margin-top: 0.2rem;
+}
+.controlTip .ctrlBtn{
+	width: 70%;
+	margin: auto;
+}
+.controlTip .ctrlBtn>div{
+	float: left;
+	width: 50%;
+}
+.controlTip .ctrlBtn .btnD{
+	width: 2.133rem;
+	height: 0.72rem;
+	line-height: 0.7rem;
+	color: #fff;
+	font-size: 0.453rem;
+	border-radius: 0.1rem;
+	text-align: center;
+	margin: 0.2rem auto 0;
+}
+.controlTip .btnRed{
+	background-color: #f00;
+}
+.controlTip .btnYell{
+	background-color: #FFA726;
+}
+.controlTip .successPic{
+	width: 1.12rem;
+	height: 1.12rem;
+	background: url(../image/sucess.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.626rem auto 0.4rem;
+}
+/*
+ 	--------------猜客下注记录------------------------
+ */
+.mainDay{
+	width: 100%;
+	height: 1.04rem;
+	background-color: #fff;
+	font-size: 0.4rem;
+	color: #212121;
+	text-align: center;
+	line-height: 1rem;
+}
+.mainDay.dayRed{
+	color: #f00;
+}
+.recordBox>li{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 0.266rem;
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	background-color: #fff;
+	font-size: 0.426rem;
+	color: #212121;
+	line-height: 0.8rem;
+}
+.recordBox .widthBig{
+	float: left;
+	width: 60%;
+	padding-left: 0.3rem;
+}
+.recordBox .widthSmall{
+	float: left;
+	width: 40%;
+}
+.recordBox .dou{
+	display: inline-block;
+	width: 0.56rem;
+	height: 0.6rem;
+	background: url(../image/dou.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+	top: 0.1rem;
+}
+.recordBox .colorRed{
+	color: #f00;
+}
+.recordBox .betTime{
+	padding-left: 0.3rem;
+}
+.inTotal{
+	height: 1.6rem;
+	width: 100%;
+	background-color: #fff;
+}
+.inTotal li{
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	color: #ff0101;
+	font-size: 0.453rem;
+	line-height: 0.7rem;
+	padding-top: 0.2rem;
+}
+.inTotal .dsc{
+	font-size: 0.373rem;
+	color: #757575;
+}
+.direction{
+	padding-left: 0.3rem;
+	line-height: 0.8rem;
+	font-size: 0.373rem;
+}
+.direction .point{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.2rem;
+	border-radius: 50%;
+	background-color: #36b33d;
+	position: relative;
+	top: -0.05rem;
+}
+.masterTotal{
+	width: 100%;
+	height: 1.6rem;
+	background-color: #fff;
+	padding: 0.2rem 0;
+}
+.masterTotal>div{
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 0.373rem;
+	color: #757575;
+}
+.masterTotal .borRight{
+	border-right: 1px solid #757575;
+}
+.masterTotal .dounum{
+	font-size: 0.453rem;
+}
+.masterTotal .dou{
+	display: inline-block;
+	width: 0.56rem;
+	height: 0.6rem;
+	background: url(../image/dou.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+	top: 0.1rem;
+}
+.masterTotal .colorRed{
+	color: #f00;
+}
+.masterTotal .colorGreen{
+	color: #36B33D;
+}
+.betUsers{
+	margin-top: 0.266rem;
+	border-top: 1px solid #BDBDBD;
+}
+.betUsers>li{
+	width: 100%;
+	height: 1.86rem;
+	background-color: #fff;
+	border-bottom: 1px solid #bdbdbd;
+}
+.betUserBox li{
+	float: left;
+}
+.betUserBox .userHead{
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+.betUserBox .userHead img{
+	width: 1.33rem;
+	height: 1.33rem;
+	border-radius: 0.2rem;
+	margin: 0.3rem 0 0 0;
+}
+.betUserBox .userBetMess{
+	width: 60%;
+}
+.betUserBox .names{
+	font-size: 0.453rem;
+	color: #212121;
+	line-height: 1rem;
+}
+.betUserBox .message{
+	font-size: 0.373rem;
+	color: #757575;
+}
+.betUserBox .mrs{
+	margin-right: 0.8rem;
+}
+.betUserBox .data{
+	font-size: 0.453rem;
+	color: #f00;
+}
+.betUserBox .showMore{
+	width: 15%;
+	text-align: center;
+}
+.betUserBox .rows{
+	display: inline-block;
+	width: 0.266rem;
+	height: 0.52rem;
+	background: url(../image/rowRight.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin-top: 0.6rem;
+}
+/*
+	 ------------参与游戏的猜客---------------
+ */
+.mainLine{
+	width: 100%;
+	height: 1.06rem;
+	line-height: 1rem;
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	background-color: #fff;
+	margin-top: 0.266rem;
+	font-size: 0.453rem;
+}
+.mainLine .lineName{
+	float: left;
+	margin-left: 0.333rem;
+}
+.mainLine .resultNum{
+	float: left;
+}
+.mainLine .resultNum li{
+	float: left;
+	width: 0.613rem;
+	height: 0.613rem;
+	border-radius: 50%;
+	background-color: #f00;
+	margin: 0.2rem 0 0 0.3rem;
+	line-height: 0.613rem;
+	text-align: center;
+	color: #fff;
+}
+.mainLine .resultNum .animal{
+	background-color: transparent;
+}
+.otherItem,.newLine{
+	border-top: 1px solid #bdbdbd;
+	margin-top: 0.64rem;
+	color: #212121;
+	font-size: 0.373rem;
+}
+.otherItem .lineItems,.newLine .lineItems{
+	width: 100%;
+	height: 1.06rem;
+	line-height: 1rem;
+	border-bottom: 1px solid #bdbdbd;
+	background-color: #fff;
+}
+.otherItem .lineItems div,.newLine .lineItems div{
+	float: left;
+}
+.otherItem .lineItems .lineIcons,.newLine .lineItems .lineIcons{
+	width: 0.48rem;
+	height: 0.48rem;
+	background: url(../image/romCenter/time.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.25rem 0.266rem 0;
+}
+.otherItem .lineItems .record{
+	background: url(../image/romCenter/record.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.otherItem .lineItems .dou{
+	background: url(../image/dou.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.otherItem .lineItems .bag{
+	background: url(../image/romCenter/bag.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.otherItem .lineItems .redStar{
+	background: url(../image/romCenter/redStar.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.otherItem .lineItems .loss{
+	background: url(../image/romCenter/loss.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.otherItem .lineItems .culcTotal{
+	background: url(../image/romCenter/culcTotal.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.newLine .lineItems .people{
+	background: url(../image/romCenter/people.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.otherItem .lineItems .rightData,.newLine .lineItems .rightData{
+	float: right;
+	color: #F00;
+	margin-right: 0.4rem;
+}
+.otherItem .redRight,.newLine.redRight{
+	width: 0.266rem;
+	height: 0.52rem;
+	background: url(../image/romCenter/redRight.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin-top: 0.2rem;
+}
+.otherItem .throwLine{
+	border-top: 1px solid #bdbdbd;
+	margin-top: 0.64rem;
+}
+.stateList li{
+	width: 100%;
+	height: 1.6rem;
+	background-color: #fff;
+	font-size: 0.373rem;
+	padding: 0 0.306rem;
+	color: #212121;
+	margin-bottom: 0.266rem;
+}
+.stateList .dou{
+	display: inline-block;
+	width: 0.56rem;
+	height: 0.6rem;
+	background: url(../image/dou.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+	top: 0.15rem;
+}
+.stateList .filled{
+	line-height: 0.8rem;
+}
+.stateList .colorRed{
+	color: #f00;
+}
+.stateList .inAccept{
+	color: #36b33d;
+}
+.stateList .inWaite{
+	color: #f00;
+}
+.shareBtn{
+	width: 8.88rem;
+	height: 1.06rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.533rem;
+	color: #fff;
+	margin: 0.64rem auto 0;
+	background-color: #4DAF51;
+	border-radius: 0.2rem;
+}
+/*
+-------未参与游戏的猜客---------------- 	
+*/
+.newLine .helpTime{
+	width: 100%;
+	height: 1.04rem;
+	line-height: 1rem;
+	font-size: 0.4rem;
+	padding-left: 0.266rem;
+	background-color: #fff;
+	border-bottom: 1px solid #bdbdbd;
+}
+.newLine{
+	margin: 0 0 0.266rem 0;
+}
+.newLine .timer{
+	color: #f00;
+}
+.orderList .masterState{
+	color: #212121;
+}
+.orderList .ocur{
+	color: #f00;
+}
+.bettingBtn{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 1.173rem;
+	background-color: #4DAF51;
+	text-align: center;
+	line-height: 1.1rem;
+	font-size: 0.453rem;
+	color: #fff;
+}

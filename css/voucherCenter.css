@@ -1,0 +1,408 @@
+.voucherToggle{
+    height: 1.333rem;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 0.133rem;
+}
+.voucherToggle>div{
+    float: left;
+    width: 50%;
+}
+.voucherToggle p{
+    width: 60%;
+    line-height: 1.3rem;
+    text-align: center;
+    font-size: 0.453rem;
+    color: #4daf51;
+    margin: auto;
+}
+.voucherToggle .toggleOn{
+    border-bottom: 1px solid #4daf51;
+}
+.diamondList{
+    margin-top: 0.133rem;
+}
+.diamondList li{
+    height: 1.466rem;
+}
+.diamondList a{
+    display: inline-block;
+    width: 100%;
+    height: 1.466rem;
+    background-color: #fff;
+    border-bottom: 1px solid #bdbdbd;
+}
+.diamondList .needDiamond,.diamondList .needDiamond>div{
+    float: left;
+    font-size: 0.533rem;
+    line-height: 1.4rem;
+}
+.diamondList .diamondIcon{
+    width: 0.466rem;
+    height: 0.44rem;
+    background: url("../image/voucher/diamond.png") no-repeat;
+    background-size: contain;
+    margin: 0.45rem 0.266rem 0;
+}
+.diamondList .needMoney{
+    float: right;
+}
+.diamondList .origin{
+    float: left;
+    position: relative;
+    font-size: 0.4rem;
+    line-height: 1.4rem;
+    color: #bdbdbd;
+    margin: 0 0.6rem 0 0;
+}
+.diamondList .slash{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url("../image/voucher/slash.png") no-repeat center center;
+    background-size: contain;
+}
+.exchangeBox{
+    overflow: hidden;
+    padding: 0.266rem;
+    background-color: #fff;
+    margin-top: 0.533rem;
+}
+.exchangeBox li{
+    float: left;
+    width: 33.33%;
+}
+.exchangeBox .exchangeItem{
+    width: 2.4rem;
+    height: 1.866rem;
+    background: url("../image/voucher/exchangeA.png") no-repeat;
+    background-size: contain;
+    margin: 0 auto 0.8rem;
+    font-size: 0.4rem;
+    color: #212121;
+}
+.exchangeBox .itemOn{
+    background: url("../image/voucher/exchangeB.png") no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+.exchangeBox .douSmall{
+    display: inline-block;
+    width: 0.426rem;
+    height: 0.6rem;
+    background: url("../image/dou.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 0.22rem;
+}
+.exchangeBox .changeDou{
+    padding: 0.2rem 0 0;
+    text-align: center;
+}
+.exchangeBox .changeDiamond{
+    padding: 0.2rem 0 0;
+    text-align: center;
+}
+.exchangeBox .diamondSmall{
+    display: inline-block;
+    width: 0.426rem;
+    height: 0.533rem;
+    background: url("../image/diamond.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 0.22rem;
+}
+.diamondList .moneyBtn{
+    float: left;
+    width: 1.6rem;
+    height: 0.613rem;
+    border: 1px solid #4daf51;
+    border-radius: 0.2rem;
+    font-size: 0.4rem;
+    color: #4daf51;
+    line-height: 0.613rem;
+    text-align: center;
+    margin: 0.395rem 0.266rem 0 0;
+}
+.reminder{
+    font-size: 0.373rem;
+    line-height: 0.6rem;
+    color: #bdbdbd;
+    padding: 1rem 0.266rem;
+}
+/*
+    �������п���ҳ��
+*/
+.cardNum{
+    width: 8.88rem;
+    height: 0.667rem;
+    margin: 1.333rem auto 0;
+    position: relative;
+}
+.cardNum input{
+    width: 100%;
+    height: 100%;
+    padding-left: 1.12rem;
+    border-radius: 0.1rem;
+    font-size: 0.32rem;
+}
+.cardNum .cardTip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.12rem;
+    height: 100%;
+    text-align: center;
+    font-size: 0.373rem;
+    color: #212121;
+    line-height: 0.6rem;
+}
+.showBanks{
+    font-size: 0.32rem;
+    margin: 0.346rem 0 0 0.7rem;
+}
+.amountDisplay{
+    padding: 1rem 0;
+}
+.amountDisplay p{
+    font-size: 0.453rem;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.amountDisplay .colorRed{
+    color: #f00;
+}
+.nextBtn{text-align: center}
+.nextBtn button{
+    width: 8.88rem;
+    height: 1.066rem;
+    font-size: 0.573rem;
+    color: #fff;
+    background-color: #4daf51;
+    margin-bottom: 4.666rem;
+}
+.attention{
+    font-size: 0.373rem;
+    color: #bdbdbd;
+    line-height: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.bankList{
+    width: 8.88rem;
+    margin: 0.133rem auto;
+}
+.bankList li{
+    width: 100%;
+    height: 1.466rem;
+    background-color: #fff;
+    border-bottom: 1px solid #bdbdbd;
+}
+.bankList .bankIcon,.bankMessage .bankIcon{
+    float: left;
+    width: 1.12rem;
+    height: 1.12rem;
+    background: url("../image/voucher/banks/guangda.png") no-repeat;
+    background-size: contain;
+    margin: 0.173rem 0.5rem 0;
+}
+.bankList .bankName{
+    float: left;
+    font-size: 0.4rem;
+    line-height: 1.4rem;
+    margin-left: 1rem;
+    color: #212121;
+}
+/*
+    Ԥ���ֻ�ҳ��
+*/
+.bankMessage{
+    width: 100%;
+    border: 1px solid #bdbdbd;
+    height: 1.466rem;
+    background-color: #fff;
+    margin: 0.666rem 0;
+}
+.bankMessage .messageBox{
+    float: left;
+    margin:0.2rem 0 0 0;
+}
+.bankMessage .bankName{
+    font-size: 0.453rem;
+    color: #212121;
+    line-height: 0.6rem;
+}
+.bankMessage .bankType{
+    font-size: 0.373rem;
+    color: #bdbdbd;
+}
+.bankMessage .cardType{
+    margin-left: 0.9rem;
+}
+.bankMessage .changeCard{
+    float: right;
+    font-size: 0.373rem;
+    color: #4daf51;
+    margin: 0.4rem 0.266rem 0;
+    text-align: center;
+}
+.payPhoneBox .amountDisplay{
+    padding: 0.2rem 0;
+    background-color: #fff;
+    border-bottom: 1px solid #bdbdbd;
+}
+.payPhoneBox .phoneBox>li{
+    height: 0.8rem;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #bdbdbd;
+}
+.payPhoneBox .tips{
+    float: left;
+    font-size: 0.4rem;
+    color: #212121;
+    text-align: center;
+    width: 2rem;
+    line-height: 0.8rem;
+}
+.phoneBox input{
+    float: left;
+    width: 4.533rem;
+    height: 100%;
+    font-size: 0.32rem;
+}
+.phoneBox .getBtn{
+    float: right;
+    width: 2.4rem;
+    height: 100%;
+    font-size: 0.4rem;
+    color: #fff;
+    background-color: #4daf51;
+    border-left: 1px solid #bdbdbd;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.acceptBox{
+    padding: 0.733rem 0 1.066rem 0.4rem;
+    font-size: 0.373rem;
+    color: #212121;
+}
+.acceptBox .stageIcon{
+    display: inline-block;
+    width: 0.56rem;
+    height: 0.56rem;
+    background: url("../image/voucher/selectNo.png") no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 0.15rem;
+    margin-right: 0.2rem;
+}
+.acceptBox .stageYes{
+    background: url("../image/voucher/selectYes.png") no-repeat;
+    background-size: contain;
+}
+.acceptBox .limitTip{
+    margin-top: 0.2rem;
+}
+.phoneAttention{
+    margin: 2rem 0;
+}
+/*
+    ģ̬�Ի���
+*/
+.stageModel{
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.stageModel .modelBg{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(246,246,246,0.8);
+    z-index: -100;
+}
+.stageModel .tipBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -4rem 0 0 -4.44rem;
+    width: 8.88rem;
+    height: 8rem;
+    background-color: #fff;
+    text-align: center;
+}
+.stageModel .resultIcon{
+    display: inline-block;
+    width: 1.12rem;
+    height: 1.12rem;
+    background: url("../image/voucher/right.png") no-repeat;
+    background-size: contain;
+    margin-top: 1.5rem;
+}
+.stageModel .errorIcon{
+    background: url("../image/voucher/error.png") no-repeat;
+    background-size: contain;
+}
+.stageModel .result{
+    font-size: 0.453rem;
+    color: #4daf51;
+    line-height: 1rem;
+}
+.stageModel .error{
+    color: #f00;
+}
+.stageModel .resultShow{
+    font-size: 0.373rem;
+    color: #757575;
+    margin-bottom: 0.5rem;
+}
+.stageModel .cell{
+    display: inline-block;
+    width: 0.426rem;
+    height: 0.56rem;
+    background: url("../image/voucher/cell.png") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: relative;
+    top: 0.2rem;
+}
+.stageModel .contact{
+    margin-bottom: 0.5rem;
+}
+.stageModel .cellNum{
+    font-size: 0.373rem;
+    color: #ffa726;
+}
+.stageModel .modelBtn button{
+    width: 4rem;
+    height: 0.8rem;
+    background-color: #4daf51;
+    color: #fff;
+    font-size: 0.453rem;
+    border-radius: 0.1rem;
+}
+.stageModel .cancel button{
+    background-color: #888;
+    margin-top: 0.25rem;
+}
+.stageModel .bigDiamond{
+    display: inline-block;
+    width: 1.266rem;
+    height: 1.2rem;
+    background: url("../image/diamond.png") no-repeat;
+    background-size: contain;
+    margin-top: 1.5rem;
+}
+.stageModel .alertTip{
+    color: #4daf51;
+    line-height: 0.6rem;
+    font-size: 0.373rem;
+    padding: 0.8rem 0;
+}

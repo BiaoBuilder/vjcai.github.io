@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>房主游戏状态展示</title>
+	    <meta name="wap-font-scale" content="no">
+	    <script src="../js/flexible.js"></script>
+	    <link rel="stylesheet" href="../css/comment.css">
+	    <link rel="stylesheet" type="text/css" href="../css/orders.css"/>
+	    <link rel="stylesheet" type="text/css" href="../css/romCenter.css"/>
+	</head>
+	<body class="pt2">
+		<header>
+			<div class="topBox">
+	            <div class="return"></div>
+	            <div class="menuTip">土豪请进</div>
+	            <!--如果是房主已开奖页面删除emainIcon的class-->
+	            <a href="masterBeRecord.html">
+		            <div class="messageIcon emialIcon">
+		            	<div class="specificNum">10</div>
+		            </div>
+	            </a>
+	       </div>
+	        <div class="showRom">
+	        	<span class="name">特码猜</span>
+	        	<span>房间号:</span>
+	        	<span>5123</span>
+	        </div>
+		</header>
+		<section>
+			<!--房主已开奖-->
+			<div class="masterOut" style="">
+				<div class="mainLine">
+					<div class="lineName">本期开奖结果:</div>
+					<ul class="resultNum">
+						<li>3</li>
+						<li>7</li>
+						<li>5</li>
+						<li>9</li>
+						<li>0</li>
+					</ul>
+				</div>
+				<div class="otherItem">
+					<div class="lineItems">
+						<div class="lineIcons bag"></div>
+						<div class="itemsName">本期获利</div>
+						<div class="rightData">2017年2月21日14时12分</div>
+					</div>
+					<div class="lineItems">
+						<div class="lineIcons loss"></div>
+						<div class="itemsName">本期亏损</div>
+						<div class="rightData">455</div>
+					</div>
+					<div class="lineItems">
+						<div class="lineIcons culcTotal"></div>
+						<div class="itemsName">总盈亏</div>
+						<div class="rightData">+2456</div>
+					</div>
+				</div>
+				<div class="shareBtn shareBtn1" data-clipboard-text="http://www.hbcloudwide.com/oss/video/6">分享</div>
+			</div>
+			<!--房主未开奖-->
+			<div class="masterNoOut" style="display: none;">
+				<div class="mainLine">
+					<div class="lineName"><span>20170208</span>期截止：<span>2</span><span>天</span><span>12</span><span>小时</span><span>6</span><span>分钟</span><span>2</span><span>秒</span></div>
+				</div>
+				<div class="otherItem">
+					<div class="lineItems">
+						<div class="lineIcons redStar"></div>
+						<div class="itemsName">本期参与人数</div>
+						<div class="rightData">
+							<span>10</span>
+							<span>人</span>
+						</div>
+					</div>
+					<div class="lineItems">
+						<div class="lineIcons dou"></div>
+						<div class="itemsName">投注总数</div>
+						<div class="rightData">
+							<span>24522</span>
+						</div>
+					</div>
+				</div>
+				<div class="shareBtn shareBtn2" data-clipboard-text="http://www.hbcloudwide.com/oss/video/7">分享</div>
+			</div>
+		</section>
+		<script src="../js/clipboard.min.js"></script>
+		<script>
+		    var clipboard = new Clipboard('.shareBtn');
+		
+		    clipboard.on('success', function(e) {
+		        console.log(e);
+		        alert("复制成功")
+		    });
+		
+		    clipboard.on('error', function(e) {
+		        console.log(e);
+		        alert("复制失败")
+		    });
+	    </script>
+	</body>
+</html>

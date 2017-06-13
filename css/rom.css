@@ -1,0 +1,158 @@
+/*
+    房间顶部条
+*/
+.romTop{
+	position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 1.173rem;
+    background: #4daf51;
+    color: #fff;
+    font-size: 0.453rem;
+    padding-top: 0.25rem;
+    z-index: 1000;
+}
+.romTop .rom{
+    float: left;
+    margin: 0 0.266rem;
+}
+.romTop .createRom{
+    float: right;
+    margin-right: 0.266rem;
+}
+.romTop .createRom>div{
+    float: left;
+    color: #fff;
+}
+.romTop .createRom .createIcon{
+    width: 0.466rem;
+    height: 0.426rem;
+    background: url("../image/rom/rom.png") no-repeat;
+    background-size: contain;
+    margin: 0.15rem 0.266rem 0;
+}
+.control{
+    height: 1.333rem;
+    width: 100%;
+}
+.control .search{
+    float: left;
+    width: 3.2rem;
+    height: 0.8rem;
+    background: #4cb051;
+    border-radius: 0.2rem;
+    margin: 0.266rem 0.266rem 0;
+    position: relative;
+    z-index: 10;
+}
+.control .search input{
+    float: left;
+}
+.control .search .put{
+    width: 2.06rem;
+    height: 0.746rem;
+    padding-left: 1rem;
+    margin: 0.026rem 0 0 0.03rem;
+    border-radius: 0.18rem 0 0 0.18rem;
+    font-size: 0.32rem;
+}
+.control .search .add{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1.25rem;
+    height: 0.8rem;
+    background-color: transparent;
+    font-size: 0.4rem;
+    color: #fff;
+}
+.control .romNum{
+    position: absolute;
+    top: 0.133rem;
+    left: 0;
+    width: 1rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    font-size: 0.4rem;
+    text-align: center;
+}
+.control .toggle{
+    float: right;
+    margin: 0.266rem 0.266rem 0;
+    width: 3.2rem;
+    height: 0.8rem;
+}
+.control .toggle>div{
+    float: left;
+    width: 50%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #bdbdbd;
+    font-size: 0.4rem;
+    text-align: center;
+}
+.control .toggle .special{
+    border: 1px solid #4cb051;
+    border-right: none;
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+.control .toggle .immediate{
+    border: 1px solid #4cb051;
+    border-left: none;
+    border-radius: 0 0.2rem 0.2rem 0;
+}
+.control .toggle .toggleIn{
+    background-color: #4cb051;
+    color: #fff;
+}
+/*
+    房间列表
+*/
+.listRom li{
+    height: 1.466rem;
+    width: 100%;
+    border-bottom: 1px solid #bdbdbd;
+    background-color: #fff;
+}
+.listRom a{
+	display: inline-block;
+	width: 100%;
+	height: 1.466rem;
+}
+.listRom a>div{
+    float: left;
+}
+.listRom .toggleLOGO .icons{
+    width: 0.48rem;
+    height: 0.48rem;
+    background: url("../image/rom/special1.png") no-repeat;
+    background-size: contain;
+    margin: 0.493rem 0.666rem 0 0.266rem;
+}
+.listRom .toggleLOGO .immediated{
+	background: url(../image/rom/immediate1.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.listRom .userHead{
+    width: 1.12rem;
+    height: 1.12rem;
+    margin: 0.17rem 0 0;
+}
+.listRom .userHead img{
+    border-radius: 0.1rem;
+}
+.listRom .describe{
+    margin: 0.2rem 0.466rem 0;
+    font-size: 0.373rem;
+    line-height: 0.5rem;
+    color: #212121;
+}
+.listRom .romNum{
+    float: right;
+    margin: 0 0.4rem;
+    line-height: 1.466rem;
+    font-size: 0.373rem;
+    color: #deb200;
+}

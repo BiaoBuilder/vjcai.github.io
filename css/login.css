@@ -1,0 +1,82 @@
+.loginTop img{
+	width: 100%;
+}
+.loginSection{
+	position: relative;
+	margin-top: -1.5rem;
+	z-index: 10;
+}
+.loginToggle>div{
+	float: left;
+	width: 50%;
+	color: #757575;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	text-align: center;
+	border-bottom: 1px solid #bdbdbd;
+}
+.loginToggle .selectType{
+	color: #4DAF51;
+	border-bottom: 1px solid #4DAF51;
+}
+.cellBox .inputItem{
+	margin-top: 0.8rem;
+	padding: 0 0.6rem;
+	position: relative;
+}
+.cellBox input{
+	width: 100%;
+	height: 1.06rem;
+	border: 1px solid #4DAF51;
+	font-size: 0.4rem;
+	padding-left: 0.8rem;
+}
+.cellBox .icons{
+	position: absolute;
+	left: 0.8rem;
+	top: 0.28rem;
+	width: 0.43rem;
+	height: 0.54rem;
+	background: url(../image/login/phone.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.cellBox .verification{
+	background: url(../image/login/verification.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.cellBox .getVerification{
+	position: absolute;
+	right: 0.6rem;
+	top: 0;
+	width: 2.4rem;
+	height: 1.06rem;
+	background-color: #4DAF51;
+	color: #fff;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 1rem;
+}
+.loginBtn{
+	width: 100%;
+	height: 1.06rem;
+	text-align: center;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	color: #fff;
+	background-color: #4DAF51;
+	border-radius: 0.1rem;
+}
+.twoCode .codePic{
+	width: 4.53rem;
+	height: 4.53rem;
+	margin: 0.8rem auto;
+	/*TODO:提示放置二维码须删除*/
+	background-color: #4DAF51; 
+}
+.twoCode .picTip{
+	font-size: 0.3rem;
+	color: #FF7E00;
+	text-align: center;
+}

@@ -1,0 +1,127 @@
+.line{
+    width: 10rem;
+    height: 5.33rem;
+}
+.billBox{
+    background-color: #fff;
+}
+.billBox .circleShow{
+    padding: 0.4rem 0 0.746rem 0;
+}
+.billBox .circles{
+    width: 2.706rem;
+    height: 2.706rem;
+    margin: auto;
+    background: url("../image/bill/circle.png") no-repeat;
+    background-size: contain;
+}
+.billBox .billTip{
+    font-size: 0.453rem;
+    color: #757575;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+.billBox .billNum{
+    font-size: 0.4rem;
+    color: #212121;
+    text-align: center;
+}
+.billBox li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #757575;
+    margin-bottom: 0.4rem;
+}
+.billBox .smallCircle{
+    display: inline-block;
+    width: 0.133rem;
+    height: 0.133rem;
+    background: url("../image/bill/cirY.png") no-repeat;
+    background-size: contain;
+    margin-right: 0.1rem;
+}
+.billBox .smallGreen{
+    background: url("../image/bill/cirG.png") no-repeat;
+    background-size: contain;
+}
+.billBox .smallBlue{
+    background: url("../image/bill/cirB.png") no-repeat;
+    background-size: contain;
+}
+.billBox .smallOrange{
+    background: url("../image/bill/cirO.png") no-repeat;
+    background-size: contain;
+}
+.billBox .mainData{
+    font-size: 0.373rem;
+    color: #212121;
+}
+.lineChart{
+    background-color: #fff;
+    margin-top: 0.32rem;
+}
+/*
+    ----��Ŀ��ʾ�����ܹ���------
+*/
+.mainTip{
+    margin: 0.133rem 0 0.4rem 0.267rem;
+}
+.mainTip .circleBlue{
+    float: left;
+    width: 0.267rem;
+    height: 0.267rem;
+    border-radius: 50%;
+    border: 0.04rem solid #36b33c;
+    margin-top: 0.22rem;
+    margin-right: 0.266rem;
+}
+.mainTip .boxName{
+    float: left;
+    font-size: 0.453rem;
+    color: #212121;
+    margin-left: 0.146rem;
+}
+/*
+    ---------------------
+*/
+/*
+    ----����Ŀ�л������ܹ���------
+*/
+.typeBox{
+    width: 6rem;
+    height: 0.8rem;
+    margin: 0.506rem auto;
+}
+.typeBox>div{
+    float: left;
+    width: 33.33%;
+    height: 0.77rem;
+    border: 1px solid #4db051;
+    font-size: 0.453rem;
+    color: #757575;
+    line-height: 0.77rem;
+    text-align: center;
+}
+.richList{
+    border-radius: 0.1rem 0 0 0.1rem;
+}
+.romList{
+    border-radius: 0 0.1rem 0.1rem 0;
+}
+.typeBox .pushList{
+    border-left: none;
+    border-right: none;
+}
+.typeBox .online{
+    background-color: #4db051;
+    color: #fff;
+}
+/*
+    ---------------------
+*/
+.douLine{
+    font-size: 0.453rem;
+    margin-left: 0.4rem;
+}

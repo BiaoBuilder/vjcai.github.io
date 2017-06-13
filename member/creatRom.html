@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>创建房间</title>
+	    <meta name="wap-font-scale" content="no">
+	    <script src="../js/flexible.js"></script>
+	    <link rel="stylesheet" href="../css/comment.css">
+	    <link rel="stylesheet" type="text/css" href="../css/romCenter.css"/>
+	</head>
+	<body>
+		<div class="pt1">
+			<header>
+				<div class="topBox">
+		            <div class="return"></div>
+		            <div class="menuTip">创建房间</div>
+		            <a href="inviteFriend.html">
+		            	<div class="needNext">下一步</div>
+		            </a>
+		        </div>
+			</header>
+			<section>
+				<ul class="creatBox">
+					<li class="mode">
+						<div class="createType">游戏模式</div>
+						<div class="typeList game">特码猜</div>
+						<div class="rowRight"></div>
+					</li>
+					<li class="romNames">
+						<div class="createType">房间名称</div>
+						<div class="typeList">
+							<input type="text" placeholder="房间名称"/>
+						</div>
+					</li>
+					<li class="romType">
+						<div class="createType">包房类型</div>
+						<div class="typeList">小包房10人</div>
+						<div class="rowRight"></div>
+					</li>
+					<li>
+						<div class="createType">玩法赔率</div>
+						<div class="typeList odds">
+							<div class="culcs reduce">-</div>
+							<div class="showOdds">8.0</div>
+							<div class="culcs plus">+</div>
+						</div>
+					</li>
+					<li>
+						<div class="createType">是否允许接受下注信息</div>
+						<div class="switchBtn"></div>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<div class="selectShow">
+			<div class="gameMode">
+				<div class="seletTip">游戏模式</div>
+				<div class="needDate">时时猜</div>
+				<div class="needDate">特码猜</div>
+			</div>
+			<div class="baofangMode" style="display: none;">
+				<div class="seletTip">包房类型</div>
+				<div class="needDate">小包房10人</div>
+				<div class="needDate">中包房20人</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/vguess.js"></script>
+	<script>
+		$(".romNames").click(function(){
+			$(this).children('.typeList').children("input").focus();
+		})
+	</script>
+</html>

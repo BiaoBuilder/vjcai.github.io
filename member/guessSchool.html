@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <title>猜猜学堂</title>
+	    <meta name="wap-font-scale" content="no">
+	    <script src="../js/flexible.js"></script>
+	    <link rel="stylesheet" href="../css/comment.css">
+	    <link rel="stylesheet" href="../css/guessSchool.css"/>
+	    <!-- Link Swiper's CSS -->
+    	<link rel="stylesheet" href="../css/swiper.min.css">
+	</head>
+	<body class="pt1">
+		<header>
+			<div class="topBox">
+	            <div class="return"></div>
+	            <div class="menuTip">猜猜学堂</div>
+	        </div>
+		</header>
+		<section>
+			<!--猜猜学堂导航页面-->
+			<div class="pageFir">
+				<!--顶部切换栏目-->
+				<div class="classToggle">
+					<div>
+		                <div class="border online">房主学堂</div>
+		            </div>
+		            <div>
+		                <div class="border">猜客学堂</div>
+		            </div>
+				</div>
+				<!--房主学堂-->
+				<div class="classed masterClass">
+					<ul>
+						<li class="masterCreat">
+							<div class="guides">如何创建房间</div>
+							<div class="detailRight"></div>
+						</li>
+						<li class="masterShow">
+							<div class="guides">如何查看开奖结果</div>
+							<div class="detailRight"></div>
+						</li>
+						<li class="masterControl">
+							<div class="guides">如何接受/拒绝房间订单</div>
+							<div class="detailRight"></div>
+						</li>
+					</ul>
+				</div>
+				<!--猜客学堂-->
+				<div class="classed guessClass" style="display: none;">
+					<ul>
+						<li class="guessJoin">
+							<div class="guides">如何参与游戏</div>
+							<div class="detailRight"></div>
+						</li>
+						<li class="guessShow">
+							<div class="guides">如何查看投注记录及开奖结果</div>
+							<div class="detailRight"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--猜猜学堂教学界面-->
+			<div class="howtodo">
+				<!--如何创建房间-->
+				<div class="howCreat" style="display: none;">
+					<div class="topTitle">如何创建房间？</div>
+					<div class="stepTitle">1.点击创建房间</div>
+					<div class="swiperBox">
+						<div class="swiper-container slideGuide">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide">
+					            	<img src="../image/school/create1.png" alt="" />
+				               	</div>
+				               	<div class="swiper-slide">
+					            	<img src="../image/school/create2.png" alt="" />
+				               	</div>
+				               	<div class="swiper-slide">
+					            	<img src="../image/school/create3.png" alt="" />
+				               	</div>
+				               	<div class="swiper-slide">
+					            	<img src="../image/school/create4.png" alt="" />
+				               	</div>
+				           </div>
+						</div>			
+						<!-- Add Arrows -->
+					    <div class="swiper-button-next btn11"></div>
+					    <div class="swiper-button-prev btn12"></div>
+				    </div>
+				</div>
+				<!--如何接受拒绝房间订单-->
+				<div class="howAccept" style="display: none;">
+					<div class="topTitle">如何接受/拒绝房间订单？</div>
+					<div class="stepTitle">1.猜客下注后，系统会自动弹出提示框，点击好的进入订单提醒页面</div>
+					<div class="swiperBox">
+						<div class="swiper-container slideGuide2">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide">
+					            	<img src="../image/school/accept1.png" alt="" />
+				               	</div>
+				               	<div class="swiper-slide">
+					            	<img src="../image/school/accept2.png" alt="" />
+				               	</div>
+				               	<div class="swiper-slide">
+					            	<img src="../image/school/accept3.png" alt="" />
+				               	</div>
+				           </div>
+						</div>			
+						<!-- Add Arrows -->
+					    <div class="swiper-button-next btn21"></div>
+					    <div class="swiper-button-prev btn22"></div>
+				    </div>
+				</div>
+				<!--如何参与游戏-->
+				<div class="howJoin" style="display: none;">
+					<div class="topTitle">如何参与游戏？</div>
+					<div class="stepTitle">
+						<p>方式一：通过点击房主通过微信发送的链接进入房间</p>
+						<p>方式二：通过APP或手机网页进入'V猜客',点击房间。</p>
+					</div>
+					<div class="swiperBox">
+						<div class="swiper-container slideGuide3">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide">
+					            	<img src="../image/school/jionGame1.png" alt="" />
+				               	</div>
+				               	<div class="swiper-slide">
+					            	<img src="../image/school/joinGame2.png" alt="" />
+				               	</div>
+				           </div>
+						</div>
+						<!-- Add Arrows -->
+					    <div class="swiper-button-next btn31"></div>
+					    <div class="swiper-button-prev btn32"></div>
+					</div>
+				</div>
+				<!--如何查看开奖结果-->
+				<div class="howSurvey howSurvey1" style="display: none;">
+					<div class="topTitle">如何查看开奖结果</div>
+					<div class="stepTitle">
+						<p>1.房主在开奖后点击进入房间便可查看到开奖结果</p>
+					</div>
+					<div class="swiperBox">
+						<div class="swiper-container slideGuide4">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide">
+					            	<img src="../image/school/show2.png" alt="" />
+				               </div>
+				           </div>
+						</div>
+						<!-- Add Arrows -->
+					    <div class="swiper-button-next btn41"></div>
+					    <div class="swiper-button-prev btn42"></div>
+					</div>
+				</div>
+				<!--如何查看开奖结果以及投注记录-->
+				<div class="howSurvey howSurvey2" style="display: none;">
+					<div class="topTitle">如何查看开奖结果及投注记录？</div>
+					<div class="stepTitle">
+						<p>1.点击底部'我的'按钮，选择'投注记录'进入相应房间内查看</p>
+					</div>
+					<div class="swiperBox">
+						<div class="swiper-container slideGuide5">
+					        <div class="swiper-wrapper">
+					            <div class="swiper-slide">
+					            	<img src="../image/school/show1.png" alt="" />
+				               </div>
+				           </div>
+						</div>
+						<!-- Add Arrows -->
+					    <div class="swiper-button-next btn51"></div>
+					    <div class="swiper-button-prev btn52"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="../js/jquery.min.js"></script>
+		<!-- Swiper JS -->
+		<script src="../js/swiper.min.js"></script>
+		<script>
+			var slideGuide = new Swiper('.slideGuide', {
+				 slidesPerView: 1,
+				 nextButton: '.btn11',
+        		 prevButton: '.btn12',
+        		 observer: true, //修改swiper自己或子元素时，自动初始化swiper，主要是这两行
+                 observeParents: true, //修改swiper的父元素时，自动初始化swiper
+        		 onSlideNextStart: function(swiper){
+			      switch(swiper.activeIndex){
+			      	case 1:$(".howtodo .stepTitle").html("<p>2.选择游戏模式、包房类型、房间赔率</p><p>3.填写房间名称</p>");break;
+			      	case 2:$(".howtodo .stepTitle").html("<p>4.选择好友或直接点击'分享给好友'进行分享</p>");break;
+			      	case 3:$(".howtodo .stepTitle").html("<p>5.点击分享好友可通过微信好友或朋友圈发送分享链接</p>");break;
+			      }
+			    },
+			    onSlidePrevStart: function(swiper){
+			      switch(swiper.activeIndex){
+			      	case 1:$(".howtodo .stepTitle").html("<p>2.选择游戏模式、包房类型、房间赔率</p><p>3.填写房间名称</p>");break;
+			      	case 2:$(".howtodo .stepTitle").html("<p>4.选择好友或直接点击'分享给好友'进行分享</p>");break;
+			      	case 0:$(".howtodo .stepTitle").html("<p>1.点击创建房间</p>");break;
+			      }
+			    }
+		    });
+		    var slideGuide2 = new Swiper('.slideGuide2', {
+				 slidesPerView: 1,
+				 nextButton: '.btn21',
+        		 prevButton: '.btn22',
+        		 observer: true, //修改swiper自己或子元素时，自动初始化swiper，主要是这两行
+                 observeParents: true, //修改swiper的父元素时，自动初始化swiper
+        		 onSlideNextStart: function(swiper){
+			      switch(swiper.activeIndex){
+			      	case 1:$(".howtodo .stepTitle").html("<p>1.房主在页面中选择下注猜客记录，进行接单或拒单操作，并可选择房间号进行多个房间互换</p>");break;
+			      	case 2:$(".howtodo .stepTitle").html("<p>1.点击'稍后',房主可在房间右上角查看下注信息并进行处理</p>");break;
+			      }
+			    },
+			    onSlidePrevStart: function(swiper){
+			      switch(swiper.activeIndex){
+			      	case 1:$(".howtodo .stepTitle").html("<p>1.房主在页面中选择下注猜客记录，进行接单或拒单操作，并可选择房间号进行多个房间互换</p>");break;
+			      	case 0:$(".howtodo .stepTitle").html("<p>1.猜客下注后，系统会自动弹出提示框，点击好的进入订单提醒页面</p>");break;
+			      }
+			    }
+		    });
+		    var slideGuide3= new Swiper('.slideGuide3', {
+				 slidesPerView: 1,
+				 nextButton: '.btn31',
+        		 prevButton: '.btn32',
+        		 observer: true, //修改swiper自己或子元素时，自动初始化swiper，主要是这两行
+                 observeParents: true, //修改swiper的父元素时，自动初始化swiper
+        		 onSlideNextStart: function(swiper){
+			      switch(swiper.activeIndex){
+			      	case 1:$(".howtodo .stepTitle").html("<p>1.输入'房号'点击'加入'按钮，进入房间</p><p>2.点击房间记录，直接进入房间</p>");break;
+			      }
+			    },
+			    onSlidePrevStart: function(swiper){
+			      switch(swiper.activeIndex){
+			      	case 0:$(".howtodo .stepTitle").html("<p>方式一：通过点击房主通过微信发送的链接进入房间</p><p>方式二：通过APP或手机网页进入'V猜客',点击房间。</p>");break;
+			      }
+			    }
+		    });
+		</script>
+		<script>
+			//房主学堂和猜客学堂的切换
+			$(".border").click(function(){
+				$(this).addClass("online").parent().siblings().children(".border").removeClass("online");
+				if($(this).html()=="房主学堂"){
+					$(".masterClass").show();
+					$('.guessClass').hide();
+				}else{
+					$(".masterClass").hide();
+					$('.guessClass').show();
+				}
+			})
+			//点击进入各房间的课堂
+			$(".masterCreat").click(function(){
+				$(".howCreat").show().siblings().hide();
+				$(".masterClass").hide();
+				$('.guessClass').hide();
+				$('.classToggle').hide();
+			})
+			$(".masterShow").click(function(){
+				$(".howSurvey1").show().siblings().hide();
+				$(".masterClass").hide();
+				$('.guessClass').hide();
+				$('.classToggle').hide();
+			})
+			$(".masterControl").click(function(){
+				$(".howAccept").show().siblings().hide();
+				$(".masterClass").hide();
+				$('.guessClass').hide();
+				$('.classToggle').hide();
+			})
+			$(".guessJoin").click(function(){
+				$(".howJoin").show().siblings().hide();
+				$(".masterClass").hide();
+				$('.guessClass').hide();
+				$('.classToggle').hide();
+			})
+			$(".guessShow").click(function(){
+				$(".howSurvey2").show().siblings().hide();
+				$(".masterClass").hide();
+				$('.guessClass').hide();
+				$('.classToggle').hide();
+			})
+			$(".return").click(function(){
+				if($(".classToggle").is(":hidden")){
+					$(".howtodo>div").hide();
+					$('.classToggle').show();
+					$(".masterClass").show();
+					$('.guessClass').hide();
+					$(".border").eq(0).addClass("online").parent().siblings().children(".border").removeClass("online");
+				}else{
+					window.history.back(-1);
+				}
+			})
+		</script>
+	</body>
+</html>

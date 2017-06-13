@@ -1,0 +1,254 @@
+/*
+    头部样式
+*/
+.head{
+    height: 1.173rem;
+    background-color: #4daf51;
+}
+.guess{
+    float: left;
+    width: 1.573rem;
+    height: 0.547rem;
+    background: url("../image/index/VGuess.png") no-repeat;
+    background-size: contain;
+    margin: 0.307rem 0.227rem;
+}
+.login{
+    float: right;
+    margin: 0.2rem 0.267rem 0;
+}
+.login .userHead{
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: #fff;
+    border-radius: 50%;
+}
+.login a{
+    font-size: 0.453rem;
+    color: #fff;
+    position: relative;
+    bottom: 0.1rem;
+    margin-left: 0.147rem;
+}
+.banner{
+	height: 5rem;
+}
+.banner img{
+    width: 100%;
+}
+/*
+    喇叭通知样式
+*/
+.showLine{
+    height: 1.33rem;
+    background-color: #f5f5f5;
+    padding-left: 0.267rem;
+}
+.showLine .horn{
+    float: left;
+    width: 0.667rem;
+    height: 0.587rem;
+    background: url("../image/index/horn.png") no-repeat;
+    background-size: contain;
+    margin-top: 0.37rem;
+}
+.showLine .broadcast{
+    font-size: 0.45rem;
+    float: left;
+    color: #757575;
+    margin-left: 0.267rem;
+    line-height: 1.33rem;
+}
+/*
+    大列表组样式
+*/
+.box{
+    background-color: #fff;
+}
+.box .tip{
+	position: relative;
+    margin: 0.133rem 0 0.4rem 0.267rem;
+}
+.box .circleBlue{
+    float: left;
+    width: 0.267rem;
+    height: 0.267rem;
+    border-radius: 50%;
+    border: 0.04rem solid #36b33c;
+    margin-top: 0.13rem;
+}
+.box .boxName{
+    float: left;
+    font-size: 0.453rem;
+    color: #212121;
+    margin-left: 0.146rem;
+}
+.box .getMore{
+	position: absolute;
+	right: 0.4rem;
+	top: 0.1rem;
+	width: 0.266rem;
+	height: 0.493rem;
+	background: url(../image/romCenter/greenRight.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.box .between{
+    height: 0.133rem;
+    background: #f5f5f5;
+}
+/*
+    猜天下
+*/
+.ctx .lists{
+    padding-bottom: 0.367rem;
+}
+.ctx .lists>a{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.ctx .lists .items{
+    width: 1.52rem;
+    height: 1.52rem;
+    margin: auto;
+    background: url("../image/index/item1.png") no-repeat;
+    background-size: contain;
+}
+.ctx .lists .item2{
+    background: url("../image/index/item2.png") no-repeat;
+    background-size: contain;
+}
+.ctx .lists .item3{
+    background: url("../image/index/item3.png") no-repeat;
+    background-size: contain;
+}
+.ctx .lists .item4{
+    background: url("../image/index/item4.png") no-repeat;
+    background-size: contain;
+}
+.ctx .lists .itemTipF{
+    font-size: 0.373rem;
+    color: #757575;
+    margin: 0.12rem 0;
+}
+.ctx .lists .itemTipS{
+    font-size: 0.293rem;
+    color: #bdbdbd;
+}
+/*
+    开奖结果
+*/
+.result .codes{
+    padding: 0 0.4rem 0.3rem;
+    position: relative;
+}
+.result .codes .codePic{
+    float: left;
+    width: 1.52rem;
+    height: 1.52rem;
+    background: url("../image/index/special.png") no-repeat;
+    background-size: contain;
+    margin-top: 0.2rem;
+}
+.result .ImmediateCode .codePic{
+    background: url("../image/index/immediate.png") no-repeat;
+    background-size: contain;
+}
+.result .codes .showData{
+    float: left;
+    margin-left: 0.533rem;
+}
+.result .showData .tipLine{
+    font-size: 0.373rem;
+    color: #212121;
+}
+.result .showData .tipLine2{
+    font-size: 0.293rem;
+    color: #212121;
+    margin-bottom: 0.1rem;
+}
+.result .showData .tipLine3{
+    font-size: 0.293rem;
+    color: #212121;
+}
+.result .showData .timeEnd{
+    color: #bdbdbd;
+}
+.result .createRom{
+    width: 1.6rem;
+    height: 0.853rem;
+    background: #fa6951;
+    border-radius: 4%;
+    font-size: 0.373rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.853rem;
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.4rem;
+}
+/*
+    猜房榜
+*/
+.cfb .specialRom{
+    border-top: 1px solid #f5f5f5;
+}
+.cfb .tip{
+    margin-bottom: 0.15rem;
+}
+.cfb .rooms .romTip{
+    padding-left: 0.533rem;
+}
+.cfb .romTip .types{
+	font-size: 0.413rem;
+    color: #212121;
+}
+.cfb .romTip .typesd{
+	font-size: 0.4rem;
+    color: #212121;
+}
+.cfb .rooms .cirFull{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: #36b33c;
+    border-radius: 50%;
+}
+.cfb .romMember{
+    width: 92%;
+    margin: auto;
+}
+.cfb .romMember a{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.cfb .romMember .showHead{
+    width: 1.173rem;
+    height: 1.173rem;
+    background-color: #f5f5f5;
+    border: 1px solid #e6e6e6;
+    border-radius: 5%;
+    margin: 0.133rem auto;
+}
+.cfb .romMember .headers{
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0.11rem 0 0 0.11rem;
+    float: left;
+}
+.cfb .romMember .headers img{
+	float: left;
+}
+.cfb .romMember p{
+    font-size: 0.373rem;
+    color: #757575;
+}
+.cfb .romMoney span{
+    color:#fd9700;
+}
+.cfb .rooms>div{
+    padding-bottom: 0.3rem;
+}

@@ -1,0 +1,222 @@
+.informBox{
+	margin-top: 0.266rem;
+	background-color: #fff;
+}
+.informBox>div{
+	border-bottom: 1px solid #bdbdbd;
+}
+.informBox .headLine{
+	width: 100%;
+	height: 1.866rem;
+}
+.informBox .lineTip{
+	float: left;
+	font-size: 0.4rem;
+	color: #212121;
+	padding-left: 0.4rem;
+	line-height: 1rem;
+}
+.informBox .touxian{
+	line-height: 1.8rem;
+}
+.informBox .userHead{
+	float: right;
+	width: 1.333rem;
+	height: 1.333rem;
+	margin: 0.25rem 0.4rem 0 0;
+}
+.informBox .userName{
+	float: right;
+	line-height: 1rem;
+	color: #757575;
+	margin-right: 0.4rem;
+}
+.informBox .rowRight{
+	float: right;
+	width: 0.24rem;
+	height: 0.44rem;
+	background: url(../image/rowRight.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.3rem 0.4rem 0 0.2rem;
+}
+.informBox .induct{
+	float: right;
+	color: #FF7E00;
+	font-size: 0.4rem;
+	line-height: 1rem;
+}
+/*
+ -----------------------------------绑定手机页面-----------------------------------
+ */
+.pageTip{
+	margin-top: 0.8rem;
+	color: #FF7E00;
+	font-size: 0.4rem;
+	padding-left: 0.266rem;
+}
+/*
+ -----------------------------------意见反馈页面-----------------------------------
+ */
+.feedbackBox{
+	margin-top: 0.266rem;
+	background-color: #fff;
+	border-top: 1px solid #BDBDBD;
+	border-bottom: 1px solid #BDBDBD;
+	padding: 0 0.266rem;
+}
+.feedbackBox .inputArea textarea{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 2.666rem;
+	border:none;
+	border-bottom: 1px solid #bdbdbd;
+	outline: none;
+	font-size: 0.4rem;
+	color: #212121;
+}
+.feedbackBox .picInput{
+	width: 100%;
+	height: 2.133rem;
+}
+.feedbackBox .picInput .addPic{
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+.webuploader-pick{
+	width: 1.4rem;
+	height: 1.4rem;
+	background: transparent;
+}
+.feedbackBox .picInput .piclist{
+	float: left;
+	width: 75%;
+}
+.feedbackBox .piclist li{
+	position: relative;
+}
+.feedbackBox .piclist img{
+	width: 80%;
+	height: 80%;
+	margin: 0.4rem auto;
+}
+.feedbackBox .piclist .delete{
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.4rem;
+}
+.feedbackBox .piclist li{
+	float: left;
+	width: 20%;
+}
+.feedbackBox .addIcon{
+	width: 1.33rem;
+	height: 1.33rem;
+	background: url(../image/addpic.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.25rem auto 0;
+}
+.contactUser .userTip{
+	font-size: 0.4rem;
+	color: #757575;
+	line-height: 1.07rem;
+	padding-left: 0.266rem;
+}
+.contactUser .contactBox{
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #BDBDBD;
+	background-color: #fff;
+	padding: 0 0.266rem;
+}
+.contactUser .contactBox>div{
+	width: 100%;
+	height: 1.07rem;
+}
+.contactUser .contactBox input{
+	width: 100%;
+	height: 100%;
+	font-size: 0.4rem;
+	color: #212121;
+	line-height: 1rem;
+}
+.contactUser .contactBox .weixinNum{
+	border-bottom: 1px solid #bdbdbd;
+}
+.subBtn{
+	width: 95%;
+	height: 1.07rem;
+	background-color: #4DAF51;
+	color: #fff;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	text-align: center;
+	margin: 0.8rem auto 0;
+}
+.showProblem .problems{
+	border-top: 1px solid #bdbdbd;
+	margin-top: 0.266rem;
+}
+.showProblem .problems li{
+	width: 100%;
+	height: 1.07rem;
+	background-color: #fff;
+	border-bottom: 1px solid #bdbdbd;
+}
+.showProblem .proTitle{
+	float: left;
+	line-height: 1rem;
+	color: #212121;
+	padding-left: 0.266rem;
+	font-size: 0.4rem;
+}
+.showProblem .proTime{
+	float: right;
+	line-height: 1rem;
+	color: #757575;
+	padding-right: 0.266rem;
+	font-size: 0.4rem;
+}
+.proDetail{
+	width: 100%;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	color: #212121;
+}
+.proDetail .proDTitle{
+	height: 1.07rem;
+	border-bottom: 1px solid #BDBDBD;
+	border-top: 1px solid #bdbdbd;
+	margin-top: 0.266rem;
+	background-color: #fff;
+}
+.proDetail .leftItem{
+	float: left;
+	width: 15%;
+	color: #FFA726;
+	text-align: center;
+}
+.proDetail .getProblem{
+	float: left;
+	width: 85%;
+	height: 1.07rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.proDetail .proDContant{
+	background-color: #fff;
+	margin-top: 0.266rem;
+}
+.proDetail .resolveBox{
+	float: left;
+	width: 85%;
+	line-height: 0.6rem;
+	margin-top: 0.2rem;
+}
+.proDetail .resolvePic li{
+	margin-top: 0.6rem;
+	width: 100%;
+}

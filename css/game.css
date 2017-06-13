@@ -1,0 +1,193 @@
+/*
+    返回按钮
+*/
+.returnLine{
+    height: 0.88rem;
+    width: 100%;
+    background: #4baf4f;
+}
+.returnLine .return{
+    float: left;
+    width: 0.266rem;
+    height: 0.52rem;
+    background: url("../image/return.png") no-repeat;
+    background-size: contain;
+    margin: 0.2rem 0 0 0.266rem;
+}
+/*
+    游戏用户
+*/
+.gameUser{
+    height: 3rem;
+    width: 100%;
+    background-color: #4baf4f;
+}
+.gameUser .taskBox{
+    float: right;
+    width: 1.733rem;
+    height: 0.586rem;
+    border-radius: 0.293rem 0 0 0.293rem;
+    background-color: #008701;
+}
+.gameUser .taskIcon{
+    float: left;
+    width: 0.48rem;
+    height: 0.48rem;
+    background: url("../image/game/task.png") no-repeat;
+    background-size: contain;
+    margin: 0.053rem 0.16rem 0 0.23rem;
+}
+.gameUser .taskTip{
+    font-size: 0.373rem;
+    color: #fff;
+    line-height: 0.586rem;
+}
+.gameUser .userHead{
+    float: left;
+    width: 1.546rem;
+    height: 1.546rem;
+    margin: 0.5rem 0.24rem 0 0.506rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.gameUser .noLogin .userHead{
+	background-color: #fff;
+}
+.gameUser .userHead img{
+    width: 100%;
+    /*TODO:测试图片需要*/
+    height: 100%;
+}
+.gameUser .information,.gameUser .information a{
+    float: left;
+    font-size: 0.373rem;
+    color: #fff;
+}
+.gameUser .userName{
+    margin-top: 0.266rem;
+}
+.gameUser .pleaseLog{
+	margin-top: 1rem;
+}
+.gameUser .numList{
+    margin-top: 0.13rem;
+}
+.gameUser .type{
+    float: left;
+    width: 0.56rem;
+    height: 0.533rem;
+    background: url("../image/diamond.png") no-repeat;
+    background-size: contain;
+}
+.gameUser .dou{
+    background: url("../image/dou.png") no-repeat;
+    background-size: contain;
+}
+.gameUser .diamondNum{
+    font-size: 0.373rem;
+    margin: 0 0.346rem 0 0.066rem;
+}
+.gameUser .douNum{
+    font-size: 0.346rem;
+    margin: 0 0.346rem 0 0.066rem;
+}
+.gameUser .recharge{
+    width: 1.2rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: 0.1rem;
+    font-size: 0.293rem;
+    color: #fff;
+    text-align: center;
+    background-color: #f6ab03;
+}
+/*
+    三个游戏版块
+*/
+.tools{
+    height: 2rem;
+    width: 90%;
+    margin: auto;
+}
+.tools>a>div{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    font-size: 0.373rem;
+}
+.tools .toolIcon{
+    width: 0.586rem;
+    height: 0.586rem;
+    background: url("../image/game/rich.png") no-repeat;
+    background-size: contain;
+    margin: 0.4rem auto 0;
+}
+.tools .push{
+    background: url("../image/game/push.png") no-repeat;
+    background-size: contain;
+}
+.tools .rom{
+    background: url("../image/game/rom.png") no-repeat;
+    background-size: contain;
+}
+.tools .richTitle{
+    color: #ff9d00;
+}
+.tools .pushTitle{
+    color: #d81d05;
+}
+.tools .romTitle{
+    color: #1197db;
+}
+/*
+    时时猜and特码猜
+*/
+.gameGuess{
+    height: 1.466rem;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 0.133rem;
+}
+.gameGuess .gameIcon{
+    float: left;
+    width: 1.12rem;
+    height: 1.12rem;
+    background: url("../image/index/immediate.png") no-repeat;
+    background-size: contain;
+    margin: 0.173rem 0.52rem 0 0.546rem;
+}
+.gameGuess .immediate{
+    background: url("../image/index/special.png") no-repeat;
+    background-size: contain;
+}
+.gameGuess .gameTitle{
+    float: left;
+}
+.gameGuess .bigTitle{
+    font-size: 0.373rem;
+    color: #212121;
+    margin-top: 0.2rem;
+}
+.gameGuess .smallTitle{
+    font-size: 0.32rem;
+    color: #757575;
+    margin-top: 0.1rem;
+}
+.gameGuess .createBtn{
+    float: right;
+}
+.gameGuess .createBtn a{
+    display: inline-block;
+    width: 1.6rem;
+    height: 0.613rem;
+    background: #6ac6ff;
+    font-size: 0.373rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.613rem;
+    border-radius: 0.1rem;
+    margin: 0.426rem 0.266rem 0 0;
+}
+.gameGuess .createBtn .bgRed{
+    background-color: #fb6851;
+}

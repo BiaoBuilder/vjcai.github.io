@@ -1,0 +1,75 @@
+*{
+	font-size: 0.4rem;
+	color: #212121;
+}
+.vicon{
+	width: 2.16rem;
+	height: 2.16rem;
+	background: url(../image/vicon.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 0.48rem auto 0.533rem;
+}
+.viconD{
+	width: 2.16rem;
+	height: 2.16rem;
+	background: url(../image/vicon.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin: 4.08rem auto 0.533rem;
+}
+.vtitle{
+	text-align: center;
+}
+.vtitleD{
+	text-align: center;
+	color: #4DAF51;
+}
+.redLine{
+	color: #F00;
+}
+.abouts{
+	border-top: 1px solid #BDBDBD;
+	margin-top: 0.4rem;
+}
+.abouts li{
+	height: 1.06rem;
+	line-height: 1.06rem;
+	padding-left: 0.32rem;
+	border-bottom: 1px solid #BDBDBD;
+}
+.dowloadBtn>div{
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-top: 1.46rem;
+}
+.dowloadBtn a{
+	display: inline-block;
+	width: 2.666rem;
+	height: 0.933rem;
+	line-height: 0.8rem;
+	border: 2px solid #4DAF51;
+	text-align: center;
+	color: #4DAF51;
+	border-radius: 0.15rem;
+}
+
+/*用户提示浏览器打开遮罩层*/
+.weModel{
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.weModel .weBg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -100000;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+}

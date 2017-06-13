@@ -1,0 +1,101 @@
+.classToggle{
+    width: 100%;
+    height: 1.173rem;
+    background-color: #fff;
+    border-bottom: 1px solid #BDBDBD;
+}
+.classToggle>div{
+    float: left;
+    width: 50%;
+}
+.classToggle .border{
+    width: 2rem;
+    margin: auto;
+    line-height: 1.1rem;
+    text-align: center;
+    font-size: 0.453rem;
+}
+.classToggle .online{
+    border-bottom: 1px solid #4DAF51;
+    color: #4DAF51;
+}
+.classed{
+	margin-top: 0.266rem;
+	background-color: #fff;
+	padding: 0 0.266rem;
+}
+.classed li{
+	height: 1.06rem;
+	border-bottom: 1px solid #bdbdbd;
+}
+.classed .guides{
+	float: left;
+	line-height: 1rem;
+	font-size: 0.4rem;
+	color: #212121;
+}
+.classed .detailRight{
+	float: right;
+	width: 0.266rem;
+	height: 0.52rem;
+	background: url(../image/school/detailRight.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	margin-top: 0.24rem;
+}
+.howtodo .topTitle{
+	width: 100%;
+	height: 1.07rem;
+	font-size: 0.4rem;
+	color: #000;
+	line-height: 1.0rem;
+	text-align: center;
+	background-color: #fff;
+}
+.howtodo .stepTitle{
+	height: 1.92rem;
+	line-height: 0.8rem;
+	font-size: 0.4rem;
+	color: #4DAF51;
+	padding-left: 0.266rem;
+}
+.howtodo .swiper-container{
+	width: 70%;
+	margin: auto;
+}
+.howtodo .swiper-container img{
+	width: 100%;
+	height: 70%;
+}
+.swiperBox{
+	position: relative;
+}
+/*修改swiper默认样式*/
+.howtodo .swiper-button-prev{
+	width: 1.06rem;
+	height: 1.06rem;
+	background: url(../image/school/swiperLeft.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	left: 0.3rem;
+}
+.howtodo .swiper-button-next{
+	width: 1.06rem;
+	height: 1.06rem;
+	background: url(../image/school/swiperRight.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	right: 0.3rem;
+}
+.howtodo .swiper-button-prev.swiper-button-disabled{
+	opacity: 1;
+	background: url(../image/school/leftDisable.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.howtodo .swiper-button-next.swiper-button-disabled{
+	opacity: 1;
+	background: url(../image/school/rightDisable.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}

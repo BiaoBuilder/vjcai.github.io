@@ -1,0 +1,124 @@
+/*
+    各类型排行榜
+*/
+.listType{
+    width: 100%;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.listType .typeBox{
+    width: 6rem;
+    height: 0.8rem;
+    margin: 0.506rem auto;
+}
+.listType .date{
+    text-align: center;
+    padding-bottom: 0.4rem;
+}
+.listType .date span{
+    display: inline-block;
+    padding: 0.1rem;
+    color: #4daf51;
+    font-size: 0.373rem;
+    line-height: 0.346rem;
+}
+.listType .date .today{
+    margin-right: 0.4rem;
+}
+.listType .date .on{
+    background-color: #4daf51;
+    color: #fff;
+    line-height: 0.426rem;
+}
+.listType .typeBox>div{
+    float: left;
+    width: 33.33%;
+    height: 0.77rem;
+    border: 1px solid #4db051;
+    font-size: 0.453rem;
+    color: #757575;
+    line-height: 0.77rem;
+    text-align: center;
+}
+.listType .richList{
+    border-radius: 0.1rem 0 0 0.1rem;
+}
+.listType .romList{
+    border-radius: 0 0.1rem 0.1rem 0;
+}
+.listType .typeBox .pushList{
+    border-left: none;
+    border-right: none;
+}
+.listType .typeBox .online{
+    background-color: #4db051;
+    color: #fff;
+}
+/*
+    排行榜列表
+*/
+.listDetail li{
+    height: 1.46rem;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+.listDetail .location{
+    float: left;
+    width: 1.81rem;
+    text-align: center;
+    font-size: 0.507rem;
+    line-height: 1.46rem;
+    color: #e7bc01;
+}
+.listDetail .medal{
+    width: 0.453rem;
+    height: 0.773rem;
+    margin: auto;
+}
+.listDetail .location .gold{
+    background: url("../image/paihang/gold.png") no-repeat;
+    background-size: contain;
+}
+.listDetail .location .silver{
+    background: url("../image/paihang/silver.png") no-repeat;
+    background-size: contain;
+}
+.listDetail .location .bronze{
+    background: url("../image/paihang/bronze.png") no-repeat;
+    background-size: contain;
+}
+.listDetail .locationHead{
+    float: left;
+    width: 1.12rem;
+    height: 1.12rem;
+    margin: 0.17rem 0 0;
+}
+.listDetail .locationHead img{
+    border-radius: 0.1rem;
+}
+.listDetail .userName{
+    float: left;
+    font-size: 0.4rem;
+    color: #212121;
+    line-height: 1.46rem;
+    margin-left: 0.33rem;
+}
+.listDetail .douMum{
+    float: right;
+    margin-right: 0.6rem;
+}
+.listDetail .douMum .douPic{
+    float: left;
+    width: 0.56rem;
+    height: 0.6rem;
+    background: url("../image/dou.png") no-repeat;
+    background-size: contain;
+    margin: 0.453rem 0.213rem 0;
+}
+.listDetail .douMum .douDetail{
+    float: left;
+    font-size: 0.4rem;
+    color: #deb200;
+    line-height: 1.46rem;
+}

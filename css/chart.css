@@ -1,0 +1,136 @@
+/*
+    走势图导航
+*/
+.menuChartBox{
+    margin-top: 0.133rem;
+    padding-top: 0.48rem;
+    background-color: #fff;
+}
+.menuChartBox>a{
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: 0.4rem;
+    color: #fb6851;
+}
+.menuChartBox .icons{
+    width: 1.52rem;
+    height: 1.52rem;
+    background: url("../image/index/special.png") no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+.menuChartBox .immediateIcon{
+    background: url("../image/index/immediate.png") no-repeat;
+    background-size: contain;
+}
+.menuChartBox .colorBlue{
+    color: #6ac6ff;
+}
+/*
+    时时猜走势图各个位数选择
+*/
+.placeSelect{
+    height: 1.173rem;
+    width: 100%;
+    font-size: 0.32rem;
+    line-height: 1.173rem;
+}
+.placeSelect>div{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.placeSelect>div .touch{
+    display: inline-block;
+    height: 1rem;
+    border-bottom: 2px solid #4daf51;
+    color: #4daf51;
+}
+/*
+    走势表格
+*/
+td{
+    text-align: center;
+}
+.tableData{
+    border-bottom: 1px solid #bdbdbd;
+}
+.tableData>table{
+    float: left;
+    width: 16%;
+}
+.tableData>table td{
+    font-size: 0.32rem;
+    color: #212121;
+    border-top: 1px solid #bdbdbd;
+    text-align: center;
+    height: 0.533rem;
+    background-color: #fff;
+}
+.tableData .swiper-container{
+    float: left;
+    width: 84%;
+}
+.tableData .swiper-container table{
+    width: 100%;
+}
+.tableData .swiper-container td{
+    width: 10%;
+    border-top: 1px solid #bdbdbd;
+    border-left: 1px solid #bdbdbd;
+    height: 0.533rem;
+    background-color: #f5f5f5;
+    font-size: 0.32rem;
+}
+.tableData .swiper-container .cutBL{
+    border-left: none;
+}
+/*
+    选中数字样式
+*/
+.luckyNum{
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: #f53a4d;
+    color: #fff;
+    line-height: 0.4rem;
+}
+/*
+    页面统计
+*/
+.count{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.count .countSelect{
+    height: 1.2rem;
+    background-color: #fff;
+    text-align: center;
+    font-size: 0.32rem;
+}
+.count .countNum{
+    float: left;
+    width: 33.33%;
+    line-height: 1.2rem;
+    position: relative;
+}
+.count .countNum .inBlock{
+    display: inline-block;
+    height: 1rem;
+    border-bottom: 1px solid #f00;
+    color: #f00;
+}
+.count .addLR{
+    position: absolute;
+    right: 0;
+    top: 0.2rem;
+    height: 0.8rem;
+    border-right: 1px solid #bdbdbd;
+}

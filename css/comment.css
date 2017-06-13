@@ -1,0 +1,411 @@
+@charset "utf-8";
+/*
+
+	开发时间：2017年2月27日
+
+*/
+/* ------------------------------------------------------------------------ 重定义浏览器默认样式 */
+*{box-sizing: border-box}
+body, input, button, select, textarea, table { font: 14px/1.5 "\5FAE\8F6F\96C5\9ED1","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"\5B8B\4F53"; color: #5C5C5C; }
+textarea { resize: none; }
+select{ vertical-align: middle; }
+body, ul, ol, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset{ margin: 0; padding: 0; }
+table { empty-cells: show; border-collapse: collapse; }
+caption, th { text-align: left; font-weight: 400; }
+li{ list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 1em; }
+em, cite, i { font-style: normal; }
+a { color: #5C5C5C; text-decoration: none; }
+img{ vertical-align: bottom; width: 100%;/*TODO:待删*/height: 100%;}
+a img { border: none; }
+body { background:#f5f5f5;}
+input,button{border: none;outline: none;}
+/*
+	解决上边距溢出问题
+*/
+div:before{content:"";display:table;}
+/*
+	解决浮动后高度缺失
+*/
+div:after{content:"";display:block;clear:both;}
+/*
+	常用样式
+*/
+.pt1{
+    padding-top: 1.173rem !important;
+}
+.pt2{
+	padding-top: 1.866rem !important;
+}
+.pt3{
+	padding-top: 2.866rem !important;
+}
+.pb2{
+    padding-bottom: 1.31rem !important;
+}
+.pb3{
+	padding-bottom: 3.386rem !important;
+}
+/*
+ 	左右浮动
+ */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*
+ 	文字居中
+ */
+.tac{
+	text-align: center;
+}
+/*
+    边距清除
+*/
+.pd0{padding: 0 !important}
+.mg0{margin: 0 !important}
+/*
+    主要颜色
+*/
+.cGreen{color: #4daf51 !important}
+.cRed{color: #f00 !important}
+/*
+   块级	A标签
+*/
+.blocka>a{
+	display: block;
+}
+/*
+    footer通用样式
+*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 1.31rem;
+    border-top: 1px solid #bdbdbd;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+}
+footer>a{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+footer .icons{
+    width: 0.746rem;
+    height: 0.746rem;
+    margin: 0.1rem auto 0;
+}
+footer .new{
+    background: url("../image/new.png") no-repeat;
+    background-size: contain;
+}
+footer .newOn{
+    background: url("../image/newOn.png") no-repeat;
+    background-size: contain;
+}
+footer .rom{
+    background: url("../image/rom.png") no-repeat;
+    background-size: contain;
+}
+footer .romOn{
+    background: url("../image/romOn.png") no-repeat;
+    background-size: contain;
+}
+footer .game{
+    background: url("../image/game.png") no-repeat;
+    background-size: contain;
+}
+footer .gameOn{
+    background: url("../image/gameOn.png") no-repeat;
+    background-size: contain;
+}
+footer .user{
+    background: url("../image/user.png") no-repeat;
+    background-size: contain;
+}
+footer .userOn{
+    background: url("../image/userOn.png") no-repeat;
+    background-size: contain;
+}
+footer a>p{
+    font-size: 0.32rem;
+    color: #bdbdbd;
+}
+footer .occur{
+    color: #36b33c;
+}
+/*
+    页面标题栏
+*/
+.topBox{
+    height: 1.173rem;
+    width: 100%;
+    background: #4db051;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+.topBox .return{
+    position: absolute;
+    left: 0.266rem;
+    top: 0.34rem;
+    width: 0.266rem;
+    height: 0.52rem;
+    background: url("../image/return.png") no-repeat;
+    background-size: contain;
+}
+.topBox .menuTip{
+    font-size: 0.453rem;
+    color: #fff;
+    line-height: 1.173rem;
+    text-align: center;
+}
+.topBox .needNext{
+	position: absolute;
+	top: 0.266rem;
+	right: 0.266rem;
+	font-size: 0.4rem;
+	color: #fff;
+}
+.topBox .messageIcon{
+	position: absolute;
+	top: 0.3rem;
+	right: 0.4rem;
+	width:0.653rem;
+	height: 0.56rem;
+	background: url(../image/email.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.topBox .emialIcon{
+	background: url(../image/romCenter/email.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.topBox .moreIcon{
+	background: url(../image/moreIcon.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.topBox .shared{
+	background: url(../image/shared.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.topBox .specificNum{
+	position: absolute;
+	top: -0.1rem;
+	right: -0.1rem;
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 50%;
+	background-color: #f00;
+	color: #fff;
+	font-size: 0.266rem;
+	text-align: center;
+	line-height: 0.4rem;
+}
+/*
+	生肖五行等等 
+*/
+.specialCoded .Zodiac{
+    display: inline-block;
+    width: 0.64rem;
+    height: 0.64rem;
+    float: left;
+    text-align: center;
+    margin: 0 0.1rem;
+    font-size: 0.48rem;
+    line-height: 0.7rem;
+}
+.specialCoded .mouse{
+    background: url("../image/zoudiac/mouse.png") no-repeat;
+    background-size: contain;
+}
+.specialCoded .cattle{
+	background: url(../image/zoudiac/cattle.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .tiger{
+	background: url(../image/zoudiac/tiger.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .rabbit{
+	background: url(../image/zoudiac/rabbit.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .dragon{
+	background: url(../image/zoudiac/dragon.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .snake{
+	background: url(../image/zoudiac/snake.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .horse{
+	background: url(../image/zoudiac/horse.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .sheep{
+	background: url(../image/zoudiac/sheep.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .monkey{
+	background: url(../image/zoudiac/monkey.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .chicken{
+	background: url(../image/zoudiac/chicken.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .dog{
+	background: url(../image/zoudiac/dog.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .pig{
+	background: url(../image/zoudiac/pig.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.specialCoded .bgRed{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #f00!important;
+}
+.specialCoded .bgBlue{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #2a96ee!important;
+}
+.specialCoded .bgGreen{
+	border-radius: 50%;
+    color: #fff;
+    background-color: #2a961e!important;
+}
+/*
+    消息提醒
+*/
+.someTips{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+}
+.someTipsBg{
+	background-color: rgba(189,189,189,.72);
+}
+.someTips .boxTip{
+	width: 8.88rem;
+	height: 5.33rem;
+	background-color: #fff;
+	border: 1px solid #FF7E00;
+	border-radius: 0.2rem;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: -2.665rem 0 0 -4.44rem;
+	overflow: hidden;
+}
+.someTips .modelTop{
+	height: 0.8rem;
+	background-color: #FF7E00;
+	width: 100%;
+	text-align: center;
+	font-size: 0.453rem;
+	color: #fff;
+}
+.someTips .successPic{
+	width: 1.12rem;
+	height: 1.12rem;
+	margin: 0.88rem auto 0.533rem;
+	background: url(../image/sucess.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+}
+.someTips .successTip{
+	font-size: 0.453rem;
+	color: #FF7E00;
+	text-align: center;
+}
+.someTips .sureBtn{
+	width: 4rem;
+	height: 0.933rem;
+	border-radius: 0.1rem;
+	text-align: center;
+	line-height: 0.9rem;
+	font-size: 0.453rem;
+	color: #fff;
+	background-color: #ff7e00;
+	margin: 0.666rem auto 0;
+}
+.someTips .failReason{
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 3.2rem;
+	color: #ff7e00;
+}
+.someTips .failed .btns{
+	display: inline-block;
+	width: 2.13rem;
+	background-color: #FF7E00;
+	font-size: 0.45rem;
+	text-align: center;
+	line-height: 0.9rem;
+	color: #fff;
+	border-radius: 0.1rem;
+}
+.someTips .failed .btnCreate{
+	margin-right: 0.6rem;
+}
+.someTips .horn{
+	display: inline-block;
+	width: 0.666rem;
+	height: 0.586rem;
+	background: url(../image/horn.png) no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+	top: 0.1rem;
+}
+/*订单提醒*/
+.mainMessage{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2.4rem;
+	background-color: #fff;
+	z-index: 100000;
+}
+.mainMessage .failReason{
+	line-height: 1.5rem;
+}
+.mainMessage .btns{
+	display: inline-block;
+	width: 2.13rem;
+	font-size: 0.45rem;
+	text-align: center;
+	line-height: 0.66rem;
+	color: #FF7E00;
+	border: 1px solid #FF7E00;
+	border-radius: 0.1rem;
+	margin: 0 0.6rem;
+}

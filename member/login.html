@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="wap-font-scale" content="no">
+	    <script src="../js/flexible.js"></script>
+	    <link rel="stylesheet" href="../css/comment.css">
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	</head>
+	<body style="background-color: #fff;">
+		<header>
+			<div class="loginTop">
+				<img src="../image/login/loginTop.png" alt="" />
+			</div>
+		</header>
+		<section class="loginSection">
+			<div class="loginToggle">
+				<div class="selectType">手机快速登录</div>
+				<div>二维码登录</div>
+			</div>
+			<!--手机快速登录-->
+			<div class="cellBox" style="display: none;">
+				<div class="inputItem inputPhone">
+					<div class="icons phoneIcon"></div>
+					<input type="text" placeholder="请输入手机号码"/>
+				</div>
+				<div class="inputItem inputVerification">
+					<div class="icons verification"></div>
+					<input type="text" placeholder="请输入手机验证码"/>
+					<div class="getVerification">获取验证码</div>
+				</div>
+				<div class="inputItem">
+					<div class="loginBtn">立即登录</div>
+				</div>
+			</div>
+			<!--二维码登录-->
+			<div class="twoCode">
+				<div class="codePic">
+					<img src="../image/user/voucher.png" alt="" />
+				</div>
+				<div class="picTip">长按二维码图片并保存图片后，进入微信扫描二维码进行登录</div>
+			</div>
+		</section>
+	</body>
+</html>

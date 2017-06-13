@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的账单</title>
+    <meta name="wap-font-scale" content="no">
+    <script src="../js/flexible.js"></script>
+    <link rel="stylesheet" href="../css/comment.css">
+    <link rel="stylesheet" href="../css/bills.css"/>
+</head>
+<body class="pt1 pb2">
+    <header>
+        <div class="topBox">
+            <div class="return"></div>
+            <div class="menuTip">我的账单</div>
+        </div>
+    </header>
+    <section>
+        <div class="billBox">
+            <div class="circleShow">
+                <div class="circles">
+                    <p class="billTip">今日盈亏</p>
+                    <p class="billNum">+2695</p>
+                </div>
+            </div>
+            <ul class="billData">
+                <li class="totalPush">
+                    <p>
+                        <span class="smallCircle"></span>
+                        <span>总投注</span>
+                    </p>
+                    <p class="mainData"><span>10</span>次</p>
+                </li>
+                <li class="totalRom">
+                    <p>
+                        <span class="smallCircle smallGreen"></span>
+                        <span>总投注</span>
+                    </p>
+                    <p class="mainData"><span>10</span>次</p>
+                </li>
+                <li class="totalEarn">
+                    <p>
+                        <span class="smallCircle smallBlue"></span>
+                        <span>总投注</span>
+                    </p>
+                    <p class="mainData"><span>10</span>次</p>
+                </li>
+                <li class="romEarn">
+                    <p>
+                        <span class="smallCircle smallOrange"></span>
+                        <span>总投注</span>
+                    </p>
+                    <p class="mainData"><span>10</span>次</p>
+                </li>
+            </ul>
+        </div>
+        <div class="lineChart">
+            <div class="mainTip">
+                <div class="circleBlue"></div>
+                <div class="boxName">猜豆走势图</div>
+            </div>
+            <div class="typeBox">
+                <div class="richList online">日</div>
+                <div class="pushList">周</div>
+                <div class="romList">月</div>
+            </div>
+            <div class="douLine">猜豆数</div>
+            <div>
+	            <div id="lineDay" class="line"></div>
+	            <div id="lineWeek" class="line" style="display: none;"></div>
+	            <div id="lineMonth" class="line" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="javascript:void (0);">
+            <div class="icons newOn"></div>
+            <p class="occur">首页</p>
+        </a>
+        <a href="game.html">
+            <div class="icons game"></div>
+            <p>游戏</p>
+        </a>
+        <a href="rom.html">
+            <div class="icons rom"></div>
+            <p>房间</p>
+        </a>
+        <a href="user.html">
+            <div class="icons user"></div>
+            <p>我的</p>
+        </a>
+    </footer>
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript">
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+
+        // 日数据填充
+        require(
+                [
+                    'echarts',
+                    'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+                ],
+                function (ec) {
+                    // 基于准备好的dom，初始化echarts图表
+                    var myChart = ec.init(document.getElementById('lineDay'));
+
+                    option = {
+                        tooltip : {
+                            trigger: 'axis'
+                        },
+                        title : {
+					        text: '单位（万）'
+					    },
+                        calculable : true,
+		                grid: {
+		                    x: '14%',
+		                    y: '18%',
+		                    x2: '8%',
+		                    y2: '14%'
+		                },
+                        xAxis : [
+                            {
+                                type : 'category',
+                                boundaryGap : false,
+                                data : ['0','2','4','6','8','10','12','14','16','18','20','22','24'],
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#212121' //修改y轴轴线颜色和标题颜色
+                                    }
+                                }
+                            }
+                        ],
+                        yAxis : [
+                            {
+                                type : 'value',
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#212121' //修改y轴轴线颜色和标题颜色
+                                    }
+                                }
+                            }
+                        ],
+                        series : [
+                            {
+                                type:'line',
+                                itemStyle: {
+                                    normal: {
+                                        color:"#369",//修改折点的颜色
+                                        areaStyle: {
+                                            // 区域图，纵向渐变填充
+                                            color : (function (){
+                                                var zrColor = require('zrender/tool/color');
+                                                return zrColor.getLinearGradient(
+                                                        0, 200, 0, 400,
+                                                        [[0, 'rgba(113,191,116,0.8)'],[0.8, 'rgba(113,191,116,0.8)']]
+                                                )
+                                            })()
+                                        },
+                                        lineStyle:{
+                                            color:"#369"//修改折线颜色
+                                        }
+                                    }
+                                },
+                                data:[0.006, 12, 0.3, 169, 0.08,500,900,0,152,66,63,33,86]
+                            }
+                        ]
+                    };
+
+                    // 为echarts对象加载数据
+                    myChart.setOption(option);
+                    //自适应大小
+                    window.onresize = myChart.resize;
+                }
+        );
+        // 周数据填充
+        require(
+                [
+                    'echarts',
+                    'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+                ],
+                function (ec) {
+                    // 基于准备好的dom，初始化echarts图表
+                    var myChart = ec.init(document.getElementById('lineWeek'));
+
+                    option = {
+                        tooltip : {
+                            trigger: 'axis'
+                        },
+                        title : {
+					        text: '单位（万）'
+					    },
+                        calculable : true,
+		                grid: {
+		                    x: '14%',
+		                    y: '18%',
+		                    x2: '8%',
+		                    y2: '14%'
+		                },
+                        xAxis : [
+                            {
+                                type : 'category',
+                                boundaryGap : false,
+                                data : ['周一','周二','周三','周四','周五','周六','周日'],
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#212121' //修改y轴轴线颜色和标题颜色
+                                    }
+                                }
+                            }
+                        ],
+                        yAxis : [
+                            {
+                                type : 'value',
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#212121' //修改y轴轴线颜色和标题颜色
+                                    }
+                                }
+                            }
+                        ],
+                        series : [
+                            {
+                                type:'line',
+                                itemStyle: {
+                                    normal: {
+                                        color:"#369",//修改折点的颜色
+                                        areaStyle: {
+                                            // 区域图，纵向渐变填充
+                                            color : (function (){
+                                                var zrColor = require('zrender/tool/color');
+                                                return zrColor.getLinearGradient(
+                                                        0, 200, 0, 400,
+                                                        [[0, 'rgba(113,191,116,0.8)'],[0.8, 'rgba(113,191,116,0.8)']]
+                                                )
+                                            })()
+                                        },
+                                        lineStyle:{
+                                            color:"#369"//修改折线颜色
+                                        }
+                                    }
+                                },
+                                data:[120, 132, 301, 134, 90,86,122]
+                            }
+                        ]
+                    };
+
+                    // 为echarts对象加载数据
+                    myChart.setOption(option);
+                    //自适应大小
+                    window.onresize = myChart.resize;
+                }
+        );
+        // 月数据填充
+        require(
+                [
+                    'echarts',
+                    'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+                ],
+                function (ec) {
+                    // 基于准备好的dom，初始化echarts图表
+                    var myChart = ec.init(document.getElementById('lineMonth'));
+
+                    option = {
+                        tooltip : {
+                            trigger: 'axis'
+                        },
+                        title : {
+					        text: '单位（万）'
+					    },
+                        calculable : true,
+		                grid: {
+		                    x: '14%',
+		                    y: '18%',
+		                    x2: '8%',
+		                    y2: '14%'
+		                },
+                        xAxis : [
+                            {
+                                type : 'category',
+                                boundaryGap : false,
+                                data : ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31'],
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#212121' //修改y轴轴线颜色和标题颜色
+                                    }
+                                }
+                            }
+                        ],
+                        yAxis : [
+                            {
+                                type : 'value',
+                                axisLine: {
+                                    lineStyle: {
+                                        color: '#212121' //修改y轴轴线颜色和标题颜色
+                                    }
+                                }
+                            }
+                        ],
+                        series : [
+                            {
+                                type:'line',
+                                itemStyle: {
+                                    normal: {
+                                        color:"#369",//修改折点的颜色
+                                        areaStyle: {
+                                            // 区域图，纵向渐变填充
+                                            color : (function (){
+                                                var zrColor = require('zrender/tool/color');
+                                                return zrColor.getLinearGradient(
+                                                        0, 200, 0, 400,
+                                                        [[0, 'rgba(113,191,116,0.8)'],[0.8, 'rgba(113,191,116,0.8)']]
+                                                )
+                                            })()
+                                        },
+                                        lineStyle:{
+                                            color:"#369"//修改折线颜色
+                                        }
+                                    }
+                                },
+                                data:[120, 132, 301, 134, 90,86,122,120, 132, 301, 134, 90,86,122,120, 132, 301, 134, 90,86,122,120, 132, 301, 134, 90,86,122,120, 132, 301, 134, 90,86,122,90,86,122]
+                            }
+                        ]
+                    };
+
+                    // 为echarts对象加载数据
+                    myChart.setOption(option);
+                    //自适应大小
+                    window.onresize = myChart.resize;
+                }
+        );
+    </script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/vguess.js"></script>
+</body>
+</html>
